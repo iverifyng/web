@@ -7,7 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center py-0">
                         <div class="py-0">
-                            <img src="../assets/img/svg/employeeLite.svg" class="img-fluid img-center svg-inject" style=width:100px>
+                            <img src="../assets/img/svvgvnbg/employeeLite.svg" class="img-fluid img-center svg-inject" style=width:100px>
                             <h5>Employee Lite</h5>
                         </div>
                         <p class="lead text-muted pt-0">

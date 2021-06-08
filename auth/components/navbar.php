@@ -20,24 +20,17 @@
                         <li class="nav-item nav-item-spaced d-none d-lg-block">
                             <a class=nav-link href="">Topup</a>
                         </li>
+
+                        <li class="nav-item nav-item-spaced d-none d-lg-block">
+                            <a class=nav-link href="account">My Account</a>
+                        </li>
                     </ul>
                     </ul>
                 <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
-                    <li class="nav-item dropdown dropdown-animate">
-                        <a class="nav-link nav-link-icon px-2" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i data-feather=settings></i></a>
-                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow p-3">
-                            <h6 class="dropdown-header px-0 mb-2 text-primary">Hi, Emma!</h6>
-                            <a href=../account/profile.html class=dropdown-item><i data-feather=user></i> <span>My profile</span> </a>
-                            <a href=../account/billing.html class=dropdown-item><i data-feather=credit-card></i> <span>Billing</span> </a>
-                            <a href=overview.html class=dropdown-item><i data-feather=activity></i> <span>Dashboard</span></a>
-                            <div class=dropdown-divider></div>
-                            <a href=../account/settings.html class=dropdown-item><i data-feather=settings></i> <span>Settings</span> </a>
-                            <a href=../authentication/login-basic.html class=dropdown-item><i data-feather=log-out></i> <span>Logout</span></a>
-                        </div>
-                    </li>
                     <li class=nav-item>
                         <a href=logout class="nav-link nav-link-icon px-2"><i data-feather=power></i></a>
                     </li>
+                    <h6 class="dropdown-header px-0 d-lg-flex text-primary">Hi, Emma!</h6>
                 </ul>
                 <div class="d-lg-none px-4 text-center">
                     <a href=https://themes.getbootstrap.com/product/quick-website-ui-kit-2/ class="btn btn-block btn-sm btn-warning" target=_blank>Purchase now</a>
