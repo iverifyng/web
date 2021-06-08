@@ -20641,7 +20641,7 @@ textarea[resize=horizontal] {
 }
 
 .jumbotron:not([class*=rounded-]) {
-    border-radius: 5rem
+    border-radius: 3rem
 }
 
 .jumbotron:not([class*=rounded-])>img {

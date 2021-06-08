@@ -101,61 +101,23 @@ include "./components/navbar.php";
         </div>
     </section>
 
-    <section class="slice slice-lg bg-dark">
-        <div class="container-fluid d-flex align-items-center position-relative zindex-100">
-            <div class="col px-0"><img src=./assets/img/svg/backgrounds/dot-map.svg alt="Image placeholder" class="img-fluid img-as-bg opacity-7">
-                <div class="row row-grid justify-content-around align-items-center">
-                    <div class=col-lg-9>
-                        <div class=text-center>
+    <section class="">
+        <div class=container-fluid>
+            <div class="jumbotron bg-dark shadow-lg mb-0"><img src=./assets/img/svg/backgrounds/dot-map.svg alt="Image placeholder" class="img-fluid img-as-bg opacity-7">
+                <div class=container>
+                    <div class="row py-6">
+                        <div class="text-center">
                             <h1 class="text-white mb-3"><b>Experience Freedom and Security</b></h1>
                             <p class="lead text-white lh-180 w-75 mx-auto mb-5">Join over 500 brands and individuals who use iverify for Employee Verification, Company Verification, Tenant Verification, Certificate Verificate and Property Verification to get credible, reliable and trusted data upon requests.</p>
-                        </div>
-
-                        <div class="row row-grid justify-content-around align-items-center mt-6 mb-n7">
-                            <div class=col-lg-9>
-                                <div class="mt-2 mb-n10">
-                                    <div class="frame-stack frame-stack-iphone-laptop">
-                                        <div class="frame frame-iphone">
-                                            <img alt="Image placeholder" src=./assets/img/svg/devices/phone.svg class=img-fluid>
-                                            <div class=frame-inner>
-                                                <img alt="Image placeholder" src=./assets/img/theme/light/screen-phone-1.jpg class=img-fluid>
-                                            </div>
-                                        </div>
-                                        <div class="frame frame-laptop">
-                                            <img alt="Image placeholder" src=./assets/img/svg/devices/macbook.svg class=img-fluid>
-                                            <div class=frame-inner>
-                                                <img alt="Image placeholder" src=./assets/img/theme/light/screen-2-1000x800.jpg class=img-fluid>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href=auth/signup target=_blank class="btn btn-lg btn-danger btn-icon mb-3 mb-lg-0">
+                                <span class=btn-inner--text>Join the tribe</span>
+                                <span class=btn-inner--icon><i data-feather=arrow-right></i></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class=slice>
-        <div class="container py-5">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-8 text-center">
-                    <h5 class=font-weight-light>Get your <strong>Security</strong> on your palm.</h5>
-                    <div class=mt-4>
-                        <a href=app-comingsoon class="btn btn-app-store mr-0 mr-lg-4 mx-2 my-2">
-                            <img alt="Image placeholder" src=./assets/img/icons/brands/apple.svg class="svg-inject fill-white"> 
-                            <span class=btn-inner--text>Download on the</span> 
-                            <span class=btn-inner--brand>App Store</span> 
-                        </a>
-                        <a href=app-comingsoon class="btn btn-app-store my-2 mx-2">
-                            <img alt="Image placeholder" src=./assets/img/icons/brands/google-play.svg class="svg-inject fill-white"> 
-                            <span class=btn-inner--text>Download on the</span> 
-                            <span class=btn-inner--brand>Play Store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
