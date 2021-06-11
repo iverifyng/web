@@ -100,7 +100,7 @@ include "./components/navbar.php";
                     <div class="alert alert-success text-center" id="success-message" style="display: none;">
                         Message sent successfully!
                     </div>
-                    <div class="spinner-grow mb-5" style="width: 3rem; height: 3rem; display: none;" id="spinner" role="status">
+                    <div class="spinner-grow mb-5 text-center" style="width: 3rem; height: 3rem; display: none; color: #0a183d;" id="spinner" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
                     <form id="contact-form" onClick="return false;">
