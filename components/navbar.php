@@ -28,7 +28,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Code_2.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#landing class="d-block h6 mb-0">Tenant Verification</a> 
+                                                            <a href=tenant-verification class="d-block h6 mb-0">Tenant Verification</a>
                                                             <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
                                                         </div>
                                                     </div>
@@ -40,7 +40,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Like_UI.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#secondary class="d-block h6 mb-0">Company Verification</a> 
+                                                            <a href=company-verification class="d-block h6 mb-0">Company Verification</a>
                                                             <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
                                                         </div>
                                                     </div>
@@ -52,7 +52,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Online_Store_2.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#account class="d-block h6 mb-0">Certificate Verification</a> 
+                                                            <a href=certificate-verification class="d-block h6 mb-0">Certificate Verification</a>
                                                             <small class="text-sm text-muted mb-0">Account management made easy.</small>
                                                         </div>
                                                     </div>
@@ -69,7 +69,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Code_2.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#landing class="d-block h6 mb-0">Corporate Employee Verification</a> 
+                                                            <a href=corporate-employee class="d-block h6 mb-0">Corporate Employee Verification</a>
                                                             <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
                                                         </div>
                                                     </div>
@@ -81,7 +81,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Online_Store_2.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#account class="d-block h6 mb-0">Domestic Employee Verification</a> 
+                                                            <a href=domestic-employee class="d-block h6 mb-0">Domestic Employee Verification</a>
                                                             <small class="text-sm text-muted mb-0">Account management made easy.</small>
                                                         </div>
                                                     </div>
@@ -93,7 +93,7 @@
                                                             <img alt="Image placeholder" src=assets/img/svg/icons/Apps.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
-                                                            <a href=../../overview.html#boards class="d-block h6 mb-0">Property Verification</a> 
+                                                            <a href=property-verification class="d-block h6 mb-0">Property Verification</a>
                                                             <small class="text-sm text-muted mb-0">Get your dashboard nice and easy.</small>
                                                         </div>
                                                     </div>
