@@ -95,12 +95,12 @@ include "./components/navbar.php";
             <div class="row justify-content-center">
                 <div class=col-lg-6>
                     <div class="alert alert-danger text-center" id="error-message" style="display: none;">
-                        Error is sending message.
+                        Error sending message!
                     </div>
                     <div class="alert alert-success text-center" id="success-message" style="display: none;">
                         Message sent successfully!
                     </div>
-                    <div class="spinner-grow mb-5 text-center" style="width: 3rem; height: 3rem; display: none; color: #0a183d;" id="spinner" role="status">
+                    <div class="spinner-grow text-primary mb-5 text-center" style="width: 3rem; height: 3rem; display: none;" id="spinner" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
                     <form id="contact-form" onClick="return false;">
@@ -108,7 +108,7 @@ include "./components/navbar.php";
                             <input class="form-control form-control-lg" name="fullName" type=text placeholder="Your name" required>
                         </div>
                         <div class=form-group>
-                            <input class="form-control form-control-lg" name="email" type=email placeholder=email@example.com required>
+                            <input class="form-control form-control-lg" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type=email placeholder=email@example.com required>
                         </div>
                         <div class=form-group>
                             <input class="form-control form-control-lg" name="phoneNum" type=text placeholder=+234-801-234-5678 required>
