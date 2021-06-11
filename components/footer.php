@@ -33,7 +33,7 @@
                         <ul class=list-unstyled>
                             <li><a href=#>Quick help</a></li>
                             <li><a href="https://blog.iverify.ng/" target="_blank">Blog</a></li>
-                            <li><a href=#>Billing</a></li>
+                            <li><a href=# onclick="tidioChatApi.open();">Chat with us</a></li>
                             <li><a href=#>Notifications</a></li>
                         </ul>
                     </div>
