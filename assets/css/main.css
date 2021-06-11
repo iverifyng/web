@@ -30026,3 +30026,10 @@ span.flatpickr-weekday {
 .bootstrap-tagsinput .badge:hover [data-role=remove] {
     opacity: 1
 }
+
+@media screen and (max-width: 600px) {
+    span.pl-3.ngicon {
+        visibility: hidden;
+        display: none;
+    }
+}

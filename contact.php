@@ -94,12 +94,31 @@ include "./components/navbar.php";
             </div>
             <div class="row justify-content-center">
                 <div class=col-lg-6>
-                    <form id=form-contact>
-                        <div class=form-group><input class="form-control form-control-lg" type=text placeholder="Your name" required></div>
-                        <div class=form-group><input class="form-control form-control-lg" type=email placeholder=email@example.com required></div>
-                        <div class=form-group><input class="form-control form-control-lg" type=text placeholder=+234-801-234-5678 required></div>
-                        <div class=form-group><textarea class="form-control form-control-lg" data-toggle=autosize placeholder="Tell us a few words ..." rows=3 required></textarea></div>
-                        <div class=text-center><button type=reset class="btn-reset d-none"></button> <button type=submit class="btn btn-block btn-lg btn-primary mt-4">Send your message</button></div>
+                    <div class="alert alert-danger text-center" id="error-message" style="display: none;">
+                        Error is sending message.
+                    </div>
+                    <div class="alert alert-success text-center" id="success-message" style="display: none;">
+                        Message sent successfully!
+                    </div>
+                    <div class="spinner-grow mb-5" style="width: 3rem; height: 3rem; display: none;" id="spinner" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <form id="contact-form" onClick="return false;">
+                        <div class=form-group>
+                            <input class="form-control form-control-lg" name="fullName" type=text placeholder="Your name" required>
+                        </div>
+                        <div class=form-group>
+                            <input class="form-control form-control-lg" name="email" type=email placeholder=email@example.com required>
+                        </div>
+                        <div class=form-group>
+                            <input class="form-control form-control-lg" name="phoneNum" type=text placeholder=+234-801-234-5678 required>
+                        </div>
+                        <div class=form-group>
+                            <textarea class="form-control form-control-lg" name="comment" data-toggle=autosize placeholder="Tell us a few words ..." rows=3 required></textarea></div>
+                        <div class=text-center>
+                            <button type=reset class="btn-reset d-none"></button>
+                            <button name="contact" id="contact" class="btn btn-block btn-lg btn-primary mt-4">Send your message</button>
+                        </div>
                     </form>
                 </div>
             </div>

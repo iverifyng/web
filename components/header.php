@@ -71,6 +71,7 @@
     <link rel=stylesheet href=assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css>
     <link rel=stylesheet href=assets/libs/%40fortawesome/fontawesome-free/css/all.min.css>
     <link rel=stylesheet href=assets/css/main.css id=stylesheet>
+    <link rel=stylesheet href=assets/libs/animate.css/animate.min.css id=stylesheet>
 </head>
 
 <body>

@@ -197,7 +197,7 @@
                         <li class=nav-item><a class=nav-link href=auth/login><span class=btn-inner--icon><i data-feather=log-in></i></span> <span class=btn-inner--text></span>Login</span></a></li>
                         <li class=nav-item><a href=auth/signup class="btn btn-sm btn-dark btn-icon ml-3">Get Started</a></li>
                     </ul>
-                    <span class="pl-3">
+                    <span class="pl-3 ngicon">
                         <img src="https://i.imgur.com/vSVsXS0.jpg" alt="iVerify Nigeria" class="avatar rounded-circle avatar-sm">
                     </span>
                     <div class="d-lg-none px-4 text-center">

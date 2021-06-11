@@ -34,7 +34,6 @@
                             <li><a href=#>Quick help</a></li>
                             <li><a href="https://blog.iverify.ng/" target="_blank">Blog</a></li>
                             <li><a href=# onclick="tidioChatApi.open();">Chat with us</a></li>
-                            <li><a href=#>Notifications</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
@@ -80,6 +79,7 @@
         <script src=www.google.com/recaptcha/api.js></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDODKndJ8udk9xrwV_9KZwzziQOgsAR3Ew"></script>
         <script src=assets/js/main.js></script>
+        <script src=assets/js/app.js></script>
         <script src="//code.tidio.co/61g5gupoqdk3g2ijdnidwr43jufdto0x.js"></script>
         <script>
             feather.replace({
