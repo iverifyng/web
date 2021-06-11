@@ -6,10 +6,21 @@ include "./components/navbar.php";
 
     <section class="slice py-5 bg-section-secondary">
         <div class=container>
+            <div class="row align-items-center mb-4">
+                <div class=col>
+                    <h1 class="h4 mb-0">Overview</h1>
+                </div>
+                <div class="">
+                    <span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span>
+                    <h5 class="h3 font-weight-bolder mb-1">₦25,370.00</h5>
+                    <div class="icon icon-shape icon-md bg-primary text-white">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                </div>
+            </div>
             <div class=row>
                 <div class=col-md-12>
                     <div class="row mx-n2">
-
                         <div class="col-sm-6 col-lg-4 px-2">
                             <div class="card mb-3">
                                 <div class="card-header pb-3">
@@ -39,7 +50,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Identity Verification <span class="text-sm text-muted">(ID Checks)</spann></h6>
+                                        <h6 class=mb-0>Identity Verification <span class="text-sm text-muted">(ID Checks)</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +146,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Employee Complete</spann></h6>
+                                        <h6 class=mb-0>Employee Complete</span></h6>
                                     </div>
                                 </div>
                             </div>

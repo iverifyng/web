@@ -16,16 +16,17 @@ include "./components/navbar.php";
                     <div class=card>
                         <div class="card-body text-center">
                             <div class=mb-3>
-                                <div class="icon icon-shape icon-md bg-primary shadow-primary text-white"><i class="fas fa-wallet"></i></div>
+                                <div class="icon icon-shape icon-md bg-primary text-white"><i class="fas fa-wallet"></i></div>
                             </div>
-                            <h5 class="h3 font-weight-bolder mb-1">₦25,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span></div>
+                            <h5 class="h3 font-weight-bolder mb-1">₦25,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 px-2">
                     <div class=card>
                         <div class="card-body text-center">
                             <div class=mb-3>
-                                <div class="icon icon-shape icon-md bg-danger shadow-danger text-white"><i class="fas fa-cash-register"></i></div>
+                                <div class="icon icon-shape icon-md bg-danger text-white"><i class="fas fa-cash-register"></i></div>
                             </div>
                             <h5 class="h3 font-weight-bolder mb-1">₦5,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Today's Income <i data-feather=chevron-down class=text-danger></i></span></div>
                     </div>
@@ -34,7 +35,7 @@ include "./components/navbar.php";
                     <div class=card>
                         <div class="card-body text-center">
                             <div class=mb-3>
-                                <div class="icon icon-shape icon-md bg-warning shadow-warning text-white"><i class="fas fa-shopping-basket"></i></div>
+                                <div class="icon icon-shape icon-md bg-warning text-white"><i class="fas fa-shopping-basket"></i></div>
                             </div>
                             <h5 class="h3 font-weight-bolder mb-1">₦2,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Spendings <i data-feather=chevron-down class=text-danger></i></span></div>
                     </div>
@@ -43,7 +44,7 @@ include "./components/navbar.php";
                     <div class=card>
                         <div class="card-body text-center">
                             <div class=mb-3>
-                                <div class="icon icon-shape icon-md bg-success shadow-success text-white"><i class="fas fa-receipt"></i></div>
+                                <div class="icon icon-shape icon-md bg-success text-white"><i class="fas fa-receipt"></i></div>
                             </div>
                             <h5 class="h3 font-weight-bolder mb-1">863</h5><span class="d-block text-sm text-muted font-weight-bold">Today's Orders <i data-feather=chevron-up class=text-success></i></span></div>
                     </div>
@@ -69,7 +70,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Nation Identity Number <span class="text-sm text-muted">(NIN)</spann></h6>
+                                        <h6 class=mb-0>Nation Identity Number <span class="text-sm text-muted">(NIN)</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Nation Identity MGT <span class="text-sm text-muted">(NIMC Slip)</spann></h6>
+                                        <h6 class=mb-0>Nation Identity MGT <span class="text-sm text-muted">(NIMC Slip)</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +217,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Bank Verification Number <span class="text-sm text-muted">(BVN)</spann></h6>
+                                        <h6 class=mb-0>Bank Verification Number <span class="text-sm text-muted">(BVN)</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +238,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Nation Identity Number <span class="text-sm text-muted">(NIN)</spann></h6>
+                                        <h6 class=mb-0>Nation Identity Number <span class="text-sm text-muted">(NIN)</span></h6>
                                     </div>
                                 </div>
                             </div>

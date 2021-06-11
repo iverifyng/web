@@ -101,7 +101,7 @@ include "./components/navbar.php";
         </div>
     </section>
 
-    <section class="">
+    <section class="mt-5">
         <div class=container-fluid>
             <div class="jumbotron bg-dark shadow-lg mb-0"><img src=./assets/img/svg/backgrounds/dot-map.svg alt="Image placeholder" class="img-fluid img-as-bg opacity-7">
                 <div class=container>
