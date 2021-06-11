@@ -139,7 +139,7 @@
                             <div class="dropdown-menu dropdown-menu-md p-0">
                                 <ul class="list-group list-group-flush px-lg-4">
                                     <li class="dropdown dropdown-animate dropdown-submenu">
-                                        <a href="faq">
+                                        <a href="#">
                                             <div class="media d-flex mt-3 mb-3">
                                                 <figure style=width:20px>
                                                     <img alt="Image placeholder" src=assets/img/svg/icons/Folders.svg class="svg-inject img-fluid" style=height:20px>
