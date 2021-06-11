@@ -25,7 +25,7 @@ include "./components/navbar.php";
                 </div>
             </div>
         </div>
-        <div class="shape-container shape-line shape-position-bottom"><svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg></div>
+        <div class="shape-container shape-line shape-position-bottom"><svg width=2560px height=100px preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg></div>
     </section>
     <section class="slice slice-lg">
         <div class=container>
@@ -100,9 +100,11 @@ include "./components/navbar.php";
                     <div class="alert alert-success text-center" id="success-message" style="display: none;">
                         Message sent successfully!
                     </div>
-                    <div class="spinner-grow text-primary mb-5 text-center" style="width: 3rem; height: 3rem; display: none;" id="spinner" role="status">
+                    <center>
+                    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem; display: none;" id="spinner" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
+                    </center>
                     <form id="contact-form" onClick="return false;">
                         <div class=form-group>
                             <input class="form-control form-control-lg" name="fullName" type=text placeholder="Your name" required>

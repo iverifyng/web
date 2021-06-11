@@ -11,7 +11,7 @@ include "./components/navbarlight.php";
                         <h1 class="text-white mb-4">Individual or corporate business.<br>We’re here for you.</h1>
                         <p class="lead text-white opacity-8">We are focused on solving some of Nigeria’s biggest challenges in Identity, Company, Certificate, Employee, Tenant and Property for People and Businesses.</p>
                         <div class=mt-5>
-                            <a href=contact class="btn btn-warning btn-lg btn-icon">
+                            <a href=contact class="btn btn-primary btn-lg btn-icon">
                                 <span class=btn-inner--icon><i data-feather=edit-3></i> </span>
                                 <span class=btn-inner--text>Contact us</span>
                             </a>
@@ -20,7 +20,7 @@ include "./components/navbarlight.php";
                 </div>
             </div>
         </div>
-        <div class="shape-container shape-line shape-position-bottom"><svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg></div>
+        <div class="shape-container shape-line shape-position-bottom"><svg width=2560px height=100px preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg></div>
     </section>
     <section class="slice slice-lg">
         <div class=container>

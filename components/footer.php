@@ -1,7 +1,7 @@
     <footer class=position-relative id=footer-main>
         <div class="footer pt-lg-7 footer-dark bg-dark">
             <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
-                <svg width=2560px height=100px xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg>
+                <svg width=2560px height=100px preserveAspectRatio=none x=0px y=0px viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space=preserve class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg>
             </div>
             <div class="container pt-4">
                 <div class="row justify-content-center">
