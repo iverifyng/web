@@ -37,7 +37,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Like_UI.svg class=img-fluid style=height:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Enterprise_2.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=company-verification class="d-block h6 mb-0">Company Verification</a>
@@ -49,7 +49,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex align-items-center">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Online_Store_2.svg class=img-fluid style=width:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Certificate.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=certificate-verification class="d-block h6 mb-0">Certificate Verification</a>
@@ -66,7 +66,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Code_2.svg class=img-fluid style=height:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Conference.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=corporate-employee class="d-block h6 mb-0">Corporate Employee Verification</a>
@@ -78,7 +78,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex align-items-center">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Online_Store_2.svg class=img-fluid style=width:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Shopping_Bag.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=domestic-employee class="d-block h6 mb-0">Domestic Employee Verification</a>
@@ -90,7 +90,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex align-items-center">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Apps.svg class=img-fluid style=width:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Enterprise.svg class=img-fluid style=width:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=property-verification class="d-block h6 mb-0">Property Verification</a>
