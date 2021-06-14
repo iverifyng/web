@@ -85,8 +85,8 @@
                         <tr>
                             <td class=\'pdl-3x pdr-3x pdb-2x\'>
                             <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Hello Chief,</b></p>
-                            <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center">Thank you for joining <b>iVerify™</b><br>By clicking on the following link, you are confirming your email address.</p>
-                            <p style="text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;"><a href="http://localhost/web/verify_email.php?token=\' . $token . \'"" class=\'btn\' style="color: #ffffff; text-decoration: none;">Verify Account</a></p>
+                            <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center">Thank you for joining <b>iVerify™</b><br>By clicking on the button below, you will be verifying your email address.</p>
+                            <p style="text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;"><a href="/verify_email.php?token=\' . $token . \'"" class=\'btn\' style="color: #ffffff; text-decoration: none;">Verify Email</a></p>
                             </td>
                         </tr>
                         </tbody>
@@ -116,7 +116,7 @@
                                                 </tbody>
                                                 <tbody>
                                                 <tr>
-                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification.</td>
+                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ is redefining the global perception of Nigerians through our verification and background checks services for a more inclusive economy.</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="" height="56" style="line-height:1px;font-size:1px">&nbsp;</td>
