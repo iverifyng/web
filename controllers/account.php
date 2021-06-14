@@ -1,9 +1,11 @@
 <?php
+//Connect email sending
+require_once "../auth/sendmail.php";
+
 session_start();
 
-// Connect database
+//Connect database
 include "../config/db.php";
-
 
 // User registration script
 if (isset($_POST['signup_btn'])) {
@@ -11,49 +13,36 @@ if (isset($_POST['signup_btn'])) {
     $firstName = $conn->real_escape_string($_POST['firstName']);
     $lastName = $conn->real_escape_string($_POST['lastName']);
     $email = $conn->real_escape_string($_POST['email']);
-    $phone = $conn->real_escape_string($_POST['phone']);
-    $stat = $conn->real_escape_string($_POST['state']);
+    $password = $conn->real_escape_string($_POST['password']);
     $accountType = $conn->real_escape_string($_POST['accountType']);
     $securityKey = 'ISC'.rand(1000, 9999);
+    $token = bin2hex(random_bytes(50)); // generate unique token
 
+    $check_user_query = "SELECT * FROM users WHERE email='$email'";
+    $result = mysqli_query($conn, $check_user_query);
+    if (mysqli_num_rows($result) > 0) {
+        $_SESSION['message_title'] = "Agent Already Exist!";
+        $_SESSION['message'] = "Modify or Delete user details";
+    }
 
-            $user_check_query = "SELECT * FROM users WHERE email='$email' and status='true' and firstName not null";
-            $result = mysqli_query($conn, $user_check_query);
-            $user = mysqli_fetch_assoc($result);
-            if ($user) { // if user exists
-                if ($user['email'] === $email) {
-                $_SESSION['message'] = "User already exist!";
-                }
-            }else { 
+    // Finally, register agent if there are no errors in the form
+    $password = sha1($password);//encrypt the password before saving in the database
+    $query = "INSERT INTO users (firstName, lastName, email, password, securityKey, token, status) 
+  			        VALUES('$firstName', '$lastName', '$email', '$password', '$securityKey', '$token', 'Active')";
+    mysqli_query($conn, $query);
+    if (mysqli_affected_rows($conn) > 0) {
+        sendVerificationEmail($email, $token);
 
-                $sql = "INSERT INTO users (fname, lname, email, phone, state, age, city, ighandle, address, picture, proof, regno, status)"
-                    . "VALUES ('$fname', '$lname', '$email', '$phone', '$state', '$age', '$city', '$ighandle', '$address', '$picture_path', '$proof_path', '$regno', 'false')";
-                    mysqli_query($conn, $sql);
-            }
-                if(mysqli_affected_rows($conn)>0){
-                    //Send Verification Mail
-                  $to = $email;
-                  $subject = "Registration Successful";
-
-                  $message = "
-                    
-                  ";
-
-                  // Always set content-type when sending HTML email
-                  $headers = "MIME-Version: 1.0" . "\r\n";
-                  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-                  // More headers
-                  $headers .= 'From: Nigerian Queen™ <donotreply@nigerianqueen.org>' . "\r\n";
-
-                  mail($to,$subject,$message,$headers);
-                }else{
-                  error_log("Error is " .mysqli_error($conn));
-                }
-                    $_SESSION['email'] = $email;
-                    header("Location: index");
-                    exit();
+        $_SESSION['email'] = $email;
+        $_SESSION['verified'] = false;
+        $_SESSION['firstName'] = $firstName;
+        header('location: joined-tribe');
+    }else {
+        $_SESSION['message_title']  = "Update Failed";
+        $_SESSION['message']    = "Error updating record now: ".mysqli_error($conn);
+    }
 }
+
 
 
 //User login script

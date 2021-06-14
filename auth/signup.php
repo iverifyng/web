@@ -17,7 +17,7 @@ require_once "../controllers/account.php";
     <meta name="keywords" content="Verification,iVerify.ng,Verify me,iVerify,Identity Verification,Due Diligence,Certificate Verification,Property Verification,Tenant Verification,Employee Verification,Domestic Staff Verification,Company Verification,Family Research,Document Verification,Verification in Nigeria">
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://i.imgur.com/muLDDf6.png"/>
-    <title>Login :: iVerify&trade;</title>
+    <title>Get Started :: iVerify&trade;</title>
     <style>
         @keyframes hidePreloader {
             0% {
@@ -84,25 +84,17 @@ require_once "../controllers/account.php";
     <div class=preloader>
         <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
     </div>
-    <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies-disabled data-backdrop=false aria-labelledby=modal-cookies aria-hidden=true>
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class=modal-body>
-                    <p class="text-sm text-white mb-3">We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.</p><a href=terms class="btn btn-sm btn-white" target=_blank>Learn more</a> <button type=button class="btn btn-sm btn-primary mr-2"
-                        data-dismiss=modal>OK</button></div>
-            </div>
-        </div>
-    </div>
     <button onclick="goBack()" class="btn btn-white btn-icon-only rounded-circle position-absolute zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle=tooltip data-placement=right title="Go back"><span class=btn-inner--icon><i data-feather=arrow-left></i></span></button>
     <section>
         <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center>
-            <img src="https://i.imgur.com/bZyJWzo.jpg" alt="Image" class="img-as-bg">
-            <!--<div class="row position-relative zindex-110 p-5">
-                <div class="col-md-8 text-center mx-auto"><span class="badge badge-warning badge-pill">News</span>
-                    <h5 class="h5 text-white mt-3">The all new is here</h5>
-                    <p class="text-white opacity-8">Everything you need to be amazing.</p>
+            <div class="mask bg-gradient-dark opacity-8">
+                <img src="../assets/img/backgrounds/signupbg2.jpg" alt="Image" class="img-as-bg">
+            </div>
+            <div class="row position-relative zindex-110 p-5">
+                <div class="col-md-8 text-center mx-auto"><span class="badge badge-primary badge-pill">Great Move</span>
+                    <h5 class="h5 text-white mt-3">Join the iverify Tribe😇</h5>
                 </div>
-            </div>-->
+            </div>
         </div>
         <div class="container-fluid d-flex flex-column">
             <div class="row align-items-center justify-content-center justify-content-lg-end min-vh-100">
@@ -126,21 +118,21 @@ require_once "../controllers/account.php";
                                     <div class=form-group">
                                         <label class=form-control-label>First Name</label>
                                         <div class="input-group input-group-merge">
-                                            <input type=text class="form-control form-control-prepend" required name=firstName placeholder="John">
+                                            <input type=text class="form-control form-control-prepend" required name="firstName" placeholder="John">
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class=form-control-label>Last Name</label>
                                         <div class="input-group input-group-merge">
-                                            <input type=text class="form-control form-control-prepend" required name=lastName placeholder="Doe">
+                                            <input type=text class="form-control form-control-prepend" required name="lastName" placeholder="Doe">
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class=form-group>
                                         <label class=form-control-label>Email address</label>
                                         <div class="input-group input-group-merge">
-                                            <input type=email class="form-control form-control-prepend" required name=email placeholder=johndoe@example.com>
+                                            <input type=email class="form-control form-control-prepend" required name="email" placeholder=johndoe@example.com>
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=at-sign></i></span></div>
                                         </div>
                                     </div>
@@ -151,16 +143,19 @@ require_once "../controllers/account.php";
                                         </div>
                                         <div class=input-group>
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div>
-                                            <input type=password class=form-control name=password placeholder=Password></div>
+                                            <input type=password class=form-control name="password" id=input-password placeholder=Password></div>
                                     </div>
                                     <div class=my-4>
-                                        <div class="custom-control custom-checkbox mb-3"><input type=checkbox required class=custom-control-input id=check-terms> <label class=custom-control-label for=check-terms>I agree to the <a href=../terms>terms and conditions</a></label></div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type=checkbox required class=custom-control-input id=check-terms>
+                                            <label class=custom-control-label for=check-terms>I agree to the <a href=../terms>terms and conditions</a></label>
+                                        </div>
                                     </div>
                                     <div class=mt-4>
                                         <button class="btn btn-block btn-primary" name="signup_btn" type="submit">Create my account</button>
                                     </div>
                                 </form>
-                            <div class=mt-4><small>Already have an acocunt?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
+                            <div class=mt-4><small>Already have an account?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
                         </div>
                     </div>
                 </div>
@@ -192,6 +187,23 @@ require_once "../controllers/account.php";
         </script>
         <?php
         unset($_SESSION['message']);
+    }
+    ?>
+    <?php
+    if (isset($_SESSION['success_message']))
+    {
+        ?>
+        <script>
+            swal({
+                title: "<?php echo $_SESSION['success_message_title']; ?>",
+                text: "<?php echo $_SESSION['success_message']; ?>",
+                icon: "success",
+                buttons: false,
+                timer: 4000
+            });
+        </script>
+        <?php
+        unset($_SESSION['success_message']);
     }
     ?>
     <script>

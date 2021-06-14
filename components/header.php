@@ -85,7 +85,7 @@
         <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
             <div class="modal-content bg-dark-dark">
                 <div class=modal-body>
-                    <p class="text-sm text-white mb-3">We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.</p><a href=terms class="btn btn-sm btn-white" target=_blank>Learn more</a> <button type=button class="btn btn-sm btn-primary mr-2"
+                    <p class="text-sm text-white mb-3">We use cookies so that our services work for you. By using our website, you agree to our use of cookies.</p><a href=terms class="btn btn-sm btn-white" target=_blank>Learn more</a> <button type=button class="btn btn-sm btn-primary mr-2"
                         data-dismiss=modal>OK</button></div>
             </div>
         </div>

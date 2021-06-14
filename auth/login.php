@@ -122,7 +122,10 @@
                                             <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-primary" data-toggle=password-text data-target=#input-password>Show password</a></div>
                                         </div>
                                         <div class=input-group>
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div><input type=password class=form-control id=input-password placeholder=Password></div>
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text><i data-feather=key></i></span></div>
+                                            <input type=password class=form-control id=input-password placeholder=Password>
+                                        </div>
                                     </div>
                                     <div class=mt-4><button type=button class="btn btn-block btn-primary">Sign in</button></div>
                                 </form>

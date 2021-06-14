@@ -31,7 +31,7 @@
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Information</h6>
                         <ul class=list-unstyled>
-                            <li><a href=#>Quick help</a></li>
+                            <li><a href=faq>Quick help</a></li>
                             <li><a href="https://blog.iverify.ng/" target="_blank">Blog</a></li>
                             <li><a href=# onclick="tidioChatApi.open();">Chat with us</a></li>
                         </ul>
