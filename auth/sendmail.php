@@ -2,8 +2,8 @@
 require_once "../vendor/autoload.php";
 
 // Create the Transport
-$transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
-    ->setUsername('iverifytechdept@gmail.com')
+$transport = (new Swift_SmtpTransport('server254.web-hosting.com', 465, 'ssl'))
+    ->setUsername('noreply@iverify.ng')
     ->setPassword('Iverify2021!!')
 ;
 
