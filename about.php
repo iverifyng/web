@@ -8,8 +8,8 @@ include "./components/navbarlight.php";
             <div class="col px-0">
                 <div class="row row-grid align-items-center">
                     <div class="col-lg-8 text-center text-lg-left">
-                        <h1 class="text-white mb-4">Individual or corporate business.<br>We’re here for you.</h1>
-                        <p class="lead text-white opacity-8">We are focused on solving some of Nigeria’s biggest challenges in Identity, Company, Certificate, Employee, Tenant and Property for People and Businesses.</p>
+                        <h1 class="text-white mb-4">Individual or corporate business,<br>We’re here for you.</h1>
+                        <p class="lead text-white opacity-8">We are focused on solving some of Nigeria’s biggest challenges in Identity, Company, Certificate, Employee, Tenant and Property Verification for People and Businesses.</p>
                         <div class=mt-5>
                             <a href=contact class="btn btn-primary btn-lg btn-icon">
                                 <span class=btn-inner--icon><i data-feather=edit-3></i> </span>
