@@ -2,7 +2,7 @@
 session_start();
 
 //Connect database
-include "./config/db.php";
+include "../config/db.php";
 
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
@@ -17,7 +17,7 @@ if (isset($_GET['token'])) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['verified'] = true;
-            header('location: auth/verified');
+            header('location: verified');
             exit(0);
         }
     }else {

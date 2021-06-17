@@ -106,14 +106,22 @@ require_once "../controllers/account.php";
                                     <h6 class="h3 mb-1">Create your account</h6>
                                     <p class="text-muted mb-0">Gain access to freedom.</p>
                                 </div><span class=clearfix></span>
-                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-                                    <div class="form-group btn-group btn-group-toggle" data-toggle="buttons" style="inline-size: -webkit-fill-available;">
-                                        <label class="btn btn-soft-primary active">
-                                            <input type="radio" name="accountType" checked> Personal
-                                        </label>
-                                        <label class="btn btn-soft-success">
-                                            <input type="radio" name="accountType"> Corporate
-                                        </label>
+                                <!-- personal form-->
+                                <div class="form-group btn-group btn-group-toggle" data-toggle="buttons" style="inline-size: -webkit-fill-available;">
+                                    <label class="btn showbtn btn-soft-primary active">
+                                        <input type="radio" name="accountType" checked> Personal
+                                    </label>
+                                    <label class="btn hidebtn btn-soft-success">
+                                        <input type="radio" name="accountType" id="#corporateButton"> Corporate
+                                    </label>
+                                </div>
+                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="hideshowForm">
+                                    <div class=form-group" style="display: none">
+                                        <label class=form-control-label>Account Type</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=text class="form-control form-control-prepend" required name="accountType" value="Personal">
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
+                                        </div>
                                     </div>
                                     <div class=form-group">
                                         <label class=form-control-label>First Name</label>
@@ -155,7 +163,63 @@ require_once "../controllers/account.php";
                                         <button class="btn btn-block btn-primary" name="signup_btn" type="submit">Create my account</button>
                                     </div>
                                 </form>
-                            <div class=mt-4><small>Already have an account?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
+                                <!-- Corporate form-->
+                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="showhideForm" style="display: none">
+                                    <div class=form-group" style="display: none">
+                                        <label class=form-control-label>Account Type</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=text class="form-control form-control-prepend" required name="accountType" value="Corporate">
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
+                                        </div>
+                                    </div>
+                                    <div class=form-group">
+                                        <label class=form-control-label>Company Name</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=text class="form-control form-control-prepend" required name="companyName" placeholder="Example Agency Limited">
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
+                                        </div>
+                                    </div>
+                                    <div class=form-group">
+                                        <label class=form-control-label>First Name</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=text class="form-control form-control-prepend" required name="firstName" placeholder="John">
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class=form-control-label>Last Name</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=text class="form-control form-control-prepend" required name="lastName" placeholder="Doe">
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
+                                        </div>
+                                    </div>
+                                    <div class=form-group>
+                                        <label class=form-control-label>Email address</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type=email class="form-control form-control-prepend" required name="email" placeholder=johndoe@example.com>
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=at-sign></i></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div><label class=form-control-label>Password</label></div>
+                                            <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-primary" data-toggle=password-text data-target=#input-password>Show password</a></div>
+                                        </div>
+                                        <div class=input-group>
+                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div>
+                                            <input type=password class=form-control name="password" id=input-password placeholder=Password></div>
+                                    </div>
+                                    <div class=my-4>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type=checkbox required class=custom-control-input id=check-terms-corporate>
+                                            <label class=custom-control-label for=check-terms-corporate>I agree to the <a href=../terms>terms and conditions</a></label>
+                                        </div>
+                                    </div>
+                                    <div class=mt-4>
+                                        <button class="btn btn-block btn-primary" name="signup_btn" type="submit">Create my account</button>
+                                    </div>
+                                </form>
+                                <div class=mt-4><small>Already have an account?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
                         </div>
                     </div>
                 </div>
@@ -216,6 +280,18 @@ require_once "../controllers/account.php";
             width: "1em",
             height: "1em"
         })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.showbtn').click(function(){
+                $('#showhideForm').hide(500);
+                $('#hideshowForm').show(500);
+            });
+            $('.hidebtn').click(function(){
+                $('#showhideForm').show(500);
+                $('#hideshowForm').hide(500);
+            });
+        });
     </script>
     
 </body>
