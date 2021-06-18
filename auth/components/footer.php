@@ -8,7 +8,7 @@
                             <div class="col-lg-8 text-center py-3">
                                 <h6 class="h3">Hello <? echo $_SESSION['firstName']; ?><br>Welcome to the tribe👏</h6>
                                 <p class="lead text-muted">
-                                     This is your dashboar.<br>Thanks for being a part of our success story, you will be up and running soon, please call or e-mail us to meet your needs.
+                                     This is your dashboard.<br>Thanks for being a part of our success story, you will be up and running soon, please call or e-mail us to meet your needs.
                                 </p>
                             </div>
                         </div>
