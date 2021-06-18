@@ -81,9 +81,9 @@ require_once "../controllers/account.php";
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTNXN8X"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class=preloader>
+    <!--<div class=preloader>
         <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
-    </div>
+    </div>-->
     <button onclick="goBack()" class="btn btn-white btn-icon-only rounded-circle position-absolute zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle=tooltip data-placement=right title="Go back">
         <span class=btn-inner--icon><i data-feather=arrow-left></i></span>
     </button>

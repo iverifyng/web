@@ -1,7 +1,7 @@
 <?php
 include "./components/header.php";
-include "./components/userstats.php";
-include "./components/navbar.php";
+//include "./components/userstats.php";
+//include "./components/navbar.php";
 ?>
 
     <section class="slice py-5 bg-section-secondary">

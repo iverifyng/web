@@ -16,7 +16,7 @@ if (isset($_GET['close'])) {
 
 <head>
     <meta charset=utf-8>
-    <meta http-equiv="refresh" content="13;url=login" />
+    <meta http-equiv="refresh" content="20;url=login" />
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name=description content="iVerify provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification and referencing model.">
     <meta name=author content="ThankGod Okoro">
@@ -161,13 +161,14 @@ if (isset($_GET['close'])) {
                             </div>
                             <div class=mb-4>
                                 <h6 class="h3 mb-1">Welcome to the tribe👏</h6>
-                                <p class="text-muted mb-0">An email with a verification link has been sent to your email (<?php echo $_SESSION['email']; ?>)</p>
+                                <p class="h6 mb-0">An email with a verification link has been sent to your email (<?php echo $_SESSION['email']; ?>)</p>
                                 <hr class="mb-2 mt-2">
-                                <p class="text-muted mb-3">Please verify your email<br>
+                                <p class="h6 mb-2">Please verify your email<br>
                                     to gain access to secured a future.</p>
-                                <form method="get">
+                                <p class="text-muted mb-3">You're being redirected...</p>
+                                <!--<form method="get">
                                     <button class="btn btn-dark" name="close" type="submit">Close</button>
-                                </form>
+                                </form>-->
                             </div>
                         </div>
                     </div>

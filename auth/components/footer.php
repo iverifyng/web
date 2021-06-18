@@ -1,4 +1,35 @@
 <?php include "./components/infomodal.php"; ?>
+
+        <div class="modal modal-fluid fade" id="staticBackdrop" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center py-3">
+                                <h6 class="h3">Welcome to the tribe👏</h6>
+                                <p class="lead text-muted">
+                                     This is your dashboar.<br>Thanks for being a part of our success story, you will be up and running soon, please call or e-mail us to meet your needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center py-3">
+                            <div class="col-lg-6 mb-3 text-center">
+                                <div class="">
+                                    <img src="../assets/img/svg/icons/Contact.svg" class="img-fluid img-center svg-inject">
+                                </div>
+                                <h6 class="h5 py-2"><a href="tel:+2348090666745">+234 809 066 6745</a></h6>
+                            </div>
+                            <div class="col-lg-6 mb-3 text-center">
+                                <div class="">
+                                    <img src="../assets/img/svg/icons/Compose_email.svg" class="img-fluid img-center svg-inject">
+                                </div>
+                                <h6 class="h4 py-2"><a href="mailto:info@iverify.ng">info@iverify.ng</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src=../assets/libs/jquery/dist/jquery.min.js></script>
         <script src=../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
         <script src=../assets/libs/svg-injector/dist/svg-injector.min.js></script>
@@ -25,6 +56,11 @@
                     r = t.createElement(a);
                 r.async = !0, r.src = "../www.googletagmanager.com/gtm4c6a.js?id=GTM-MF4DZVH", m.parentNode.insertBefore(r, m)
             }(window, document, "script", "dataLayer")
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#staticBackdrop").modal('show');
+            });
         </script>
 </body>
 

@@ -22,6 +22,10 @@ if (isset($_POST['signup_btn'])) {
     $check_user_query = "SELECT * FROM users WHERE email='$email'";
     $result = mysqli_query($conn, $check_user_query);
     if (mysqli_num_rows($result) > 0) {
+        if (isset($_SESSION['notify'])) {
+            echo '<button class="btn btn-secondary" data-toggle="notify" data-placement="bottom" data-align="right" data-type="dark" data-icon="fas fa-envelope-open">Bottom Right</button>';
+            session_unset('notify');
+        }
         $_SESSION['message_title'] = "Agent Already Exist!";
         $_SESSION['message'] = "Modify or Delete user details";
     }else {

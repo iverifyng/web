@@ -1,5 +1,6 @@
 <?php
 require_once "../controllers/account.php";
+$_SESSION['notify'];
 ?>
 <!DOCTYPE html>
 <html lang=en>
@@ -81,9 +82,9 @@ require_once "../controllers/account.php";
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTNXN8X"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class=preloader>
+    <!--<div class=preloader>
         <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
-    </div>
+    </div>-->
     <button onclick="goBack()" class="btn btn-white btn-icon-only rounded-circle position-absolute zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle=tooltip data-placement=right title="Go back"><span class=btn-inner--icon><i data-feather=arrow-left></i></span></button>
     <section>
         <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center>

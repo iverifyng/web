@@ -25,7 +25,7 @@
                                                 <div class="list-group-item border-0">
                                                     <div class="media d-flex">
                                                         <figure style=width:40px>
-                                                            <img alt="Image placeholder" src=assets/img/svg/icons/Code_2.svg class=img-fluid style=height:40px>
+                                                            <img alt="Image placeholder" src=assets/img/svg/icons/User_male.svg class=img-fluid style=height:40px>
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=tenant-verification class="d-block h6 mb-0">Tenant Verification</a>
