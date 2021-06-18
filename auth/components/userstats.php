@@ -11,7 +11,7 @@
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h6 class="h5 mb-0">John Doe</h6><span class="d-block text-muted">johndoe@gmail.com</span></div>
+                            <h6 class="h5 mb-0"><?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?></h6><span class="d-block text-muted"><?php echo $_SESSION['email']; ?></span></div>
                         <div class="d-flex mb-5">
                             <div class="col-4 text-center"><a href=# class="h5 font-weight-bolder text-warning mb-0">25</a> <span class="d-block text-sm">Posts</span></div>
                             <div class="col-4 text-center"><a href=# class="h5 font-weight-bolder text-warning mb-0">350</a> <span class="d-block text-sm">Following</span></div>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer py-3 mt-auto"><a href=# class="btn btn-block btn-sm btn-neutral btn-icon rounded-pill"><span class=btn-inner--icon><i data-feather=log-out></i></span> <span class=btn-inner--text>Sign out</span></a></div>
+                <div class="modal-footer py-3 mt-auto"><a href=logout class="btn btn-block btn-sm btn-neutral btn-icon rounded-pill"><span class=btn-inner--icon><i data-feather=log-out></i></span> <span class=btn-inner--text>Sign out</span></a></div>
             </div>
         </div>
     </div>
