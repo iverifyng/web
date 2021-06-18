@@ -11,11 +11,7 @@ include "./components/navbar.php";
                     <h1 class="h4 mb-0">Overview</h1>
                 </div>
                 <div class="">
-                    <span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span>
-                    <h5 class="h3 font-weight-bolder mb-1">₦25,370.00</h5>
-                    <div class="icon icon-shape icon-md bg-primary text-white">
-                        <i class="fas fa-wallet"></i>
-                    </div>
+                    <h5 class="h3 font-weight-bolder mb-1"><span class="text-sm text-muted font-weight-bold">Wallet Balance</span> ₦0</h5>
                 </div>
             </div>
             <div class=row>

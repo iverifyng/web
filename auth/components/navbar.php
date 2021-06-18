@@ -30,7 +30,7 @@
                     <li class=nav-item>
                         <a href=logout class="nav-link nav-link-icon px-2"><i data-feather=power></i></a>
                     </li>
-                    <h6 class="dropdown-header px-0 d-lg-flex text-primary">Hi, Emma!</h6>
+                    <h6 class="dropdown-header px-0 d-lg-flex text-primary">Hi, <?php echo $_SESSION['firstName']; ?></h6>
                 </ul>
                 <div class="d-lg-none px-4 text-center">
                     <a href=https://themes.getbootstrap.com/product/quick-website-ui-kit-2/ class="btn btn-block btn-sm btn-warning" target=_blank>Purchase now</a>

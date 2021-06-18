@@ -1,3 +1,6 @@
+<?php
+require_once "../controllers/account.php";
+?>
 <!DOCTYPE html>
 <html lang=en>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -106,10 +109,16 @@
                                     <h6 class="h3 mb-1">Welcome back!</h6>
                                     <p class="text-muted mb-0">Sign in to your account to continue.</p>
                                 </div><span class=clearfix></span>
-                                <form>
+                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                                     <div class=form-group><label class=form-control-label>Email address</label>
                                         <div class=input-group>
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div><input type=email class=form-control id=input-email placeholder=name@example.com></div>
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=user></i>
+                                                </span>
+                                            </div>
+                                            <input type=email class=form-control id=input-email name="email" placeholder=name@example.com>
+                                        </div>
                                     </div>
                                     <div class="form-group mb-0">
                                         <div class="d-flex align-items-center justify-content-between">
@@ -119,10 +128,10 @@
                                         <div class=input-group>
                                             <div class=input-group-prepend>
                                                 <span class=input-group-text><i data-feather=key></i></span></div>
-                                            <input type=password class=form-control id=input-password placeholder=Password>
+                                            <input type=password class=form-control id=input-password name="password" placeholder=Password>
                                         </div>
                                     </div>
-                                    <div class=mt-4><button type=button class="btn btn-block btn-primary">Sign in</button></div>
+                                    <div class=mt-4><button type=submit name="user_login_btn" class="btn btn-block btn-primary">Sign in</button></div>
                                 </form>
                                 <div class=mt-4><small>Not registered?</small> <a href=signup class="small font-weight-bold">Create account</a></div>
                             </div>
@@ -140,6 +149,24 @@
     <script src=../assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
     <script src=../assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
     <script src=../assets/js/main.js></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <?php
+    if (isset($_SESSION['message']))
+    {
+        ?>
+        <script>
+            swal({
+                title: "<?php echo $_SESSION['message_title']; ?>",
+                text: "<?php echo $_SESSION['message']; ?>",
+                icon: "error",
+                buttons: false,
+                timer: 5000
+            });
+        </script>
+        <?php
+        unset($_SESSION['message']);
+    }
+    ?>
     <script>
     function goBack() {
         window.history.back();

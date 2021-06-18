@@ -47,46 +47,46 @@ if (isset($_POST['signup_btn'])) {
 
 
 //User login script
-if (isset($_POST['admin_btn'])) {
+if (isset($_POST['user_login_btn'])) {
 
-    $username       = $conn->real_escape_string($_POST['username']);
-    $password       = $conn->real_escape_string($_POST['password']);
-    $firstName      = $conn->real_escape_string($_POST['firstName']);
-    $lastName       = $conn->real_escape_string($_POST['lastName']);
-    $email          = $conn->real_escape_string($_POST['email']);
-    $position       = $conn->real_escape_string($_POST['position']);
-    $status         = $conn->real_escape_string($_POST['status']);
-    $phone          = $conn->real_escape_string($_POST['phone']);
+    $password = $conn->real_escape_string($_POST['password']);
+    $firstName = $conn->real_escape_string($_POST['firstName']);
+    $lastName = $conn->real_escape_string($_POST['lastName']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $position = $conn->real_escape_string($_POST['position']);
+    $status = $conn->real_escape_string($_POST['status']);
+    $phone = $conn->real_escape_string($_POST['phone']);
+    $verified = $conn->real_escape_string($_POST['verified']);
 
     $password = sha1($password);
-    $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+    $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = mysqli_query($conn, $query);
     while ($row = mysqli_fetch_array($result)) {
-        $firstName          = $row['firstName'];
-        $lastName           = $row['lastName'];
-        $email              = $row['email'];
-        $username           = $row['username'];
-        $id                 = $row['id'];
-        $status             = $row['status'];
-        $position           = $row['position'];
-        $picture            = $row['picture'];
-        $phone              = $row['phone'];
+        $firstName = $row['firstName'];
+        $lastName = $row['lastName'];
+        $email = $row['email'];
+        $id = $row['id'];
+        $status = $row['status'];
+        $verified = $row['verified'];
+        $picture = $row['picture'];
+        $phone = $row['phone'];
+
     }if (mysqli_num_rows($result) == 1) {
-        $_SESSION['username']       = $username;
-        $_SESSION['firstName']      = $firstName;
-        $_SESSION['lastName']       = $lastName;
-        $_SESSION['position']       = $position;
-        $_SESSION['picture']        = $picture;
-        $_SESSION['email']          = $email;
-        $_SESSION['phone']          = $phone;
-        $_SESSION['id']             = $id;
+        $_SESSION['firstName'] = $firstName;
+        $_SESSION['lastName'] = $lastName;
+        $_SESSION['position'] = $position;
+        $_SESSION['picture'] = $picture;
+        $_SESSION['email'] = $email;
+        $_SESSION['phone'] = $phone;
+        $_SESSION['id'] = $id;
         if ($status == 'Inactive'){
             $_SESSION['message_title'] = "Account Inactive";
-            $_SESSION['message'] = "Please contact admin!";
+            $_SESSION['message'] = "Please contact our customer care.";
         }if ($status == 'Active') {
-            if ($position == 'Admin') {
-                header('location: dashboard');
-            }if ($position == 'Super Admin') {
+            if ($verified == 0) {
+                $_SESSION['message_title'] = "Email not Verified";
+                $_SESSION['message'] = "Check your email to verify account.";
+            }if ($verified == 1) {
                 header('location: dashboard');
             }
         }

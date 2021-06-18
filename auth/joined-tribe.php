@@ -16,7 +16,7 @@ if (isset($_GET['close'])) {
 
 <head>
     <meta charset=utf-8>
-    <meta http-equiv="refresh" content="7;url=login" />
+    <meta http-equiv="refresh" content="13;url=login" />
     <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name=description content="iVerify provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification and referencing model.">
     <meta name=author content="ThankGod Okoro">

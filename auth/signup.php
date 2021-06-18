@@ -123,25 +123,37 @@ require_once "../controllers/account.php";
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
                                         </div>
                                     </div>
-                                    <div class=form-group">
+                                    <div class=form-group>
                                         <label class=form-control-label>First Name</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=user></i>
+                                                </span>
+                                            </div>
                                             <input type=text class="form-control form-control-prepend" required name="firstName" placeholder="John">
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class=form-control-label>Last Name</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=user></i>
+                                                </span>
+                                            </div>
                                             <input type=text class="form-control form-control-prepend" required name="lastName" placeholder="Doe">
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class=form-group>
                                         <label class=form-control-label>Email address</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=at-sign></i>
+                                                </span>
+                                            </div>
                                             <input type=email class="form-control form-control-prepend" required name="email" placeholder=johndoe@example.com>
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=at-sign></i></span></div>
                                         </div>
                                     </div>
                                     <div class="form-group mb-0">
@@ -165,39 +177,55 @@ require_once "../controllers/account.php";
                                 </form>
                                 <!-- Corporate form-->
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="showhideForm" style="display: none">
-                                    <div class=form-group" style="display: none">
+                                    <div class=form-group style="display: none">
                                         <label class=form-control-label>Account Type</label>
                                         <div class="input-group input-group-merge">
                                             <input type=text class="form-control form-control-prepend" required name="accountType" value="Corporate">
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
                                         </div>
                                     </div>
-                                    <div class=form-group">
+                                    <div class=form-group>
                                         <label class=form-control-label>Company Name</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=briefcase></i>
+                                                </span>
+                                            </div>
                                             <input type=text class="form-control form-control-prepend" required name="companyName" placeholder="Example Agency Limited">
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=briefcase></i></span></div>
                                         </div>
                                     </div>
-                                    <div class=form-group">
+                                    <div class=form-group>
                                         <label class=form-control-label>First Name</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=user></i>
+                                                </span>
+                                            </div>
                                             <input type=text class="form-control form-control-prepend" required name="firstName" placeholder="John">
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class=form-control-label>Last Name</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=user></i>
+                                                </span>
+                                            </div>
                                             <input type=text class="form-control form-control-prepend" required name="lastName" placeholder="Doe">
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=user></i></span></div>
                                         </div>
                                     </div>
                                     <div class=form-group>
                                         <label class=form-control-label>Email address</label>
-                                        <div class="input-group input-group-merge">
+                                        <div class="input-group">
+                                            <div class=input-group-prepend>
+                                                <span class=input-group-text>
+                                                    <i data-feather=at-sign></i>
+                                                </span>
+                                            </div>
                                             <input type=email class="form-control form-control-prepend" required name="email" placeholder=johndoe@example.com>
-                                            <div class=input-group-prepend><span class=input-group-text><i data-feather=at-sign></i></span></div>
                                         </div>
                                     </div>
                                     <div class="form-group mb-0">
