@@ -11,7 +11,7 @@ include "./components/navbar.php";
                     <h1 class="h4 mb-0">Overview</h1>
                 </div>
                 <div class="">
-                    <h5 class="h3 font-weight-bolder mb-1"><span class="text-sm text-muted font-weight-bold">Wallet Balance</span> ₦0</h5>
+                    <h5 class="h3 font-weight-bolder"><span class="text-sm text-muted font-weight-bold">Wallet Balance</span> ₦0</h5>
                 </div>
             </div>
             <div class=row>
@@ -142,7 +142,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Employee Complete</span></h6>
+                                        <h6 class=mb-0>Employee Unlimited</span></h6>
                                     </div>
                                 </div>
                             </div>
