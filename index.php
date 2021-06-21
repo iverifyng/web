@@ -7,8 +7,8 @@ include "./components/navbar.php";
         <div class="container pb-lg-5 position-relative zindex-100">
             <div class="row align-items-center justify-content-center justify-content-lg-start">
                 <div class="col-md-8 col-lg-5 mb-5 mb-lg-0 text-center text-lg-left">
-                    <h1 class="display-4 text-white my-4">Your happiness<br>is <strong>verified.</strong></h1>
-                    <p class="lead text-white opacity-8">Our document verification and real-time technology allows you to verify data anytime anywhere.</p>
+                    <h1 class="display-5 text-white my-4">Redefining your access to information.</h1>
+                    <p class="lead text-white opacity-8">Our document verification and improved identity innovation allows you to verify data and access information.</p>
                     <div class="mt-5">
                         <a href="auth/signup" class="btn btn-white btn-lg btn-icon">
                             <span class="btn-inner--text">Get started</span>
@@ -45,7 +45,6 @@ include "./components/navbar.php";
                         <!--<div class=frame-inner><img alt="Image placeholder" src=assets/img/theme/light/screen-2-1000x800.jpg class=img-fluid></div>-->
                     </div>
                     <div class="w-25 position-absolute top-n5 left-8 left-xl-9"><img alt="Image placeholder" src=assets/img/svg/shapes/dots-square.svg class="svg-inject img-fluid"></div>
-                    <div class="w-25 position-absolute bottom-8 right-n7"><img alt="Image placeholder" src=assets/img/svg/shapes/dots-square.svg class="svg-inject img-fluid"></div>
                 </div>
             </div>
         </div>
@@ -64,21 +63,21 @@ include "./components/navbar.php";
                         <div class=icon><img alt="Image placeholder" src=./assets/img/svg/icons/Group.svg class="svg-inject img-fluid"></div>
                     </div>
                     <h5>Employee Verification</h5>
-                    <p class="text-muted mb-0">Who is your employee? How much do you know your employee? Are you a recruiter or an employer? At iverify we provide detailed background checks & services upon request.</p>
+                    <p class="text-muted mb-0">Outsource and leverage our comprehensive employee verification solutions to make good hiring decisions, set the structure, culture and values of your home or workplace and comply with the CBN tier 3 KYC requirements.</p>
                 </div>
                 <div class=col-md-4>
                     <div class=pb-4>
                         <div class=icon><img alt="Image placeholder" src=./assets/img/svg/icons/Enterprise_2.svg class="svg-inject img-fluid"></div>
                     </div>
                     <h5>Company Verification</h5>
-                    <p class="text-muted mb-0">Do you want to verify the status of any company in Nigeria? Are you considering a joint venture or partnership in Nigeria? Trust Iverify with your credible company verification request.</p>
+                    <p class="text-muted mb-0">Build a portfolio and Increase your pre-contractual knowledge of any company registered in Nigeria that you choose to acquire, invest in, partner with or engage in a business relationship to asses their background, organizational structure, capacity and competence.</p>
                 </div>
                 <div class=col-md-4>
                     <div class=pb-4>
                         <div class=icon><img alt="Image placeholder" src=./assets/img/svg/icons/Enterprise.svg class="svg-inject img-fluid"></div>
                     </div>
                     <h5 class="">Tenant Verification</h5>
-                    <p class="text-muted mb-0">Are you a landlord, property owner or a real estate manager? With our credible rental database, we provide reliable background details of all prospective tenants.</p>
+                    <p class="text-muted mb-0">We guarantee that our efficient services and Tenant verification solution ensure Landlords, property managers, real estate brokers and agents protect their rental income and minimize exposure to high-risk tenants.</p>
                 </div>
             </div>
         </div>

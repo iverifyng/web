@@ -78,9 +78,9 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTNXN8X"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class=preloader>
+    <!--<div class=preloader>
         <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
-    </div>
+    </div>-->
     <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies-disabled data-backdrop=false aria-labelledby=modal-cookies aria-hidden=true>
         <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
             <div class="modal-content bg-dark-dark">

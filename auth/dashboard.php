@@ -1,19 +1,12 @@
 <?php
+$page = 'Dashboard';
 include "./components/header.php";
-//include "./components/userstats.php";
-//include "./components/navbar.php";
+include "./components/userstats.php";
+include "./components/walletbalance.php";
 ?>
 
-    <section class="slice py-5 bg-section-secondary">
+    <section class="bg-section-secondary pb-5">
         <div class=container>
-            <div class="row align-items-center mb-4">
-                <div class=col>
-                    <h1 class="h4 mb-0">Overview</h1>
-                </div>
-                <div class="">
-                    <h5 class="h3 font-weight-bolder"><span class="text-sm text-muted font-weight-bold">Wallet Balance</span> ₦0</h5>
-                </div>
-            </div>
             <div class=row>
                 <div class=col-md-12>
                     <div class="row mx-n2">

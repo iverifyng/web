@@ -58,9 +58,6 @@
                     <div class="col-md-12 pb-3">
                         <div class="copyright text-sm font-weight-bold text-center"> © <script>document.write(new Date().getFullYear());</script> <a class=font-weight-bold>iVerify&trade;</a> All Rights Reserved.</div>
                     </div>
-                    <div class=col-md-12>
-                        <div class="copyright text-sm font-weight-bold text-center">© 2019 iVerify.ng, Ltd. All rights reserved All text, graphics, audio files, code, downloadable material, and other works on this web site are the copyrighted works of iverify.ng, Inc. All Rights Reserved. Any unauthorized redistribution or reproduction of any copyrighted materials on this web site is strictly prohibited. Other product and company names are trademarks of their respective owners. This web site contains simulated images; actual appearance may vary.</div>
-                    </div>
                 </div>
         </div>
         </div>

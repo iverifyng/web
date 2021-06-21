@@ -23,7 +23,7 @@ if (isset($_POST['signup_btn'])) {
     $result = mysqli_query($conn, $check_user_query);
     if (mysqli_num_rows($result) > 0) {
         if (isset($_SESSION['notify'])) {
-            echo '<button class="btn btn-secondary" data-toggle="notify" data-placement="bottom" data-align="right" data-type="dark" data-icon="fas fa-envelope-open">Bottom Right</button>';
+            echo '<button class="btn btn-secondary" data-toggle="notify" data-placement="bottom" data-align="right" data-type="dark" data-icon="fas fa-envelope-open">Bottom Right</button>  ';
             session_unset('notify');
         }
         $_SESSION['message_title'] = "Agent Already Exist!";
@@ -62,7 +62,7 @@ if (isset($_POST['user_login_btn'])) {
     $phone = $conn->real_escape_string($_POST['phone']);
     $verified = $conn->real_escape_string($_POST['verified']);
     $accountType = $conn->real_escape_string($_POST['accountType']);
-    $verified = $conn->real_escape_string($_POST['verified']);
+    $securityKey = $conn->real_escape_string($_POST['securityKey']);
 
     $password = sha1($password);
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
@@ -77,6 +77,7 @@ if (isset($_POST['user_login_btn'])) {
         $picture = $row['picture'];
         $phone = $row['phone'];
         $accountType = $row['accountType'];
+        $securityKey = $row['securityKey'];
 
     }if (mysqli_num_rows($result) == 1) {
         $_SESSION['firstName'] = $firstName;
@@ -86,6 +87,7 @@ if (isset($_POST['user_login_btn'])) {
         $_SESSION['email'] = $email;
         $_SESSION['phone'] = $phone;
         $_SESSION['accountType'] = $accountType;
+        $_SESSION['securityKey'] = $securityKey;
         $_SESSION['id'] = $id;
         if ($status == 'Inactive'){
             $_SESSION['message_title'] = "Account Inactive";

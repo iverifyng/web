@@ -1,4 +1,4 @@
-    <header class="" id=header-main>
+    <header class="bg-white" id=header-main>
         <nav class="navbar navbar-main navbar-expand-lg shadow navbar-light" id=navbar-main>
             <div class=container>
                 <button class="navbar-toggler order-lg-2 ml-n3 ml-lg-0" type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button>
@@ -9,19 +9,19 @@
                         <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><i data-feather=x></i></button>
                     </div>
                     <ul class="navbar-nav ml-lg-auto mr-3">
-                        <li class="nav-item nav-item-spaced d-none d-lg-block">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Dashboard'){echo 'active';}?>">
                             <a class=nav-link href=dashboard>Dashboard</a>
                         </li>
 
-                        <li class="nav-item nav-item-spaced d-none d-lg-block">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='portfolio'){echo 'active';}?>">
                             <a class=nav-link href=history>Records</a>
                         </li>
 
-                        <li class="nav-item nav-item-spaced d-none d-lg-block">
-                            <a class=nav-link href="">Topup</a>
+                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Topup'){echo 'active';}?>">
+                            <a class=nav-link href="topup">Topup</a>
                         </li>
 
-                        <li class="nav-item nav-item-spaced d-none d-lg-block">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Account'){echo 'active';}?>">
                             <a class=nav-link href="account">My Account</a>
                         </li>
                     </ul>

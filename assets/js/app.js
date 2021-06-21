@@ -40,3 +40,15 @@ $(document).ready(function(){
         });
     });
 });
+
+
+//Copy to clipboard
+function clipboardCopy() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert("Copied Account: " + copyText.value);
+}

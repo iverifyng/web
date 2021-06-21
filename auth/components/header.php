@@ -79,7 +79,7 @@ if (isset($_GET['logout'])) {
     <link rel=stylesheet href=../assets/css/main.css id=stylesheet>
 </head>
 
-<body>
-    <div class=preloader>
+<body class="bg-section-secondary">
+    <!--<div class=preloader>
         <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
-    </div>
+    </div>-->

@@ -17,7 +17,7 @@
                                 <div class="">
                                     <img src="../assets/img/svg/icons/Contact.svg" class="img-fluid img-center svg-inject">
                                 </div>
-                                <h6 class="h5 py-2"><a href="tel:+2348090666745">+234 809 066 6745</a></h6>
+                                <h6 class="h5 py-2">+234 809 066 6745</a></h6>
                             </div>
                             <div class="col-lg-6 mb-3 text-center">
                                 <div class="">
@@ -40,6 +40,8 @@
         <script src=../assets/libs/apexcharts/dist/apexcharts.min.js></script>
         <script src=../assets/libs/progressbar.js/dist/progressbar.min.js></script>
         <script src=../assets/js/main.js></script>
+        <script src=../assets/js/app.js></script>
+        <script src="https://api.flutterwave.com/v3/payments"></script>
         <script>
             feather.replace({
                 width: "1em",

@@ -179,3 +179,124 @@
         </div>
     </div>
 </div>
+
+
+<!-- Providus Bank Details -->
+<div class="modal modal-fluid fade" id="providusBank" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 mb-3 text-center">
+                        <div class="">
+                            <img src="../assets/img/svg/Providus-Bank-logo.png" class="img-fluid img-center" style="width: 200px">
+                            <label class="mb-0">Account Name</label>
+                            <h6 class="mb-0">I-Verify by Rentcheck LTD</h6>
+                            <label class="mb-0">Account Number</label>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class=col-12>
+                            <form>
+                                <div class="form-row align-items-center">
+                                    <div class="col-7">
+                                        <div class="form-group mb-0">
+                                            <div class="input-group">
+                                                <input type="text" id="myInput" class="form-control" readonly value="5400689132">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 my-1">
+                                        <button onclick="clipboardCopy()" class="btn btn-dark btn-icon">
+                                            <span class="btn-inner--icon">
+                                                <i data-feather="copy"></i>
+                                            </span>
+                                            <span class="btn-inner--text">Copy</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row align-items-center pt-4">
+                        <div class="col-12">
+                            <a href="pop" class="btn btn-primary btn-icon">
+                                <span class="btn-inner--icon">
+                                    <i data-feather="upload"></i>
+                                </span>
+                                <span class="btn-inner--text">Upload Payment Proof</span>
+                            </a>
+                            <button type="button" class="btn btn-danger btn-icon" data-dismiss="modal">
+                                <span class="btn-inner--icon">
+                                    <i data-feather="x-circle"></i>
+                                </span>
+                                <span class="btn-inner--text">Close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Zenith Bank Details -->
+<div class="modal modal-fluid fade" id="zenithBank" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 mb-3 text-center">
+                        <div class="">
+                            <img src="../assets/img/clients/png/zenithbank.png" class="img-fluid img-center" style="width: 200px">
+                            <label class="mb-0">Account Name</label>
+                            <h6 class="mb-0">I-Verify by Rentcheck LTD</h6>
+                            <label class="mb-0">Account Number</label>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class=col-12>
+                            <form>
+                                <div class="form-row align-items-center">
+                                    <div class="col-7">
+                                        <div class="form-group mb-0">
+                                            <div class="input-group">
+                                                <input type="text" id="myInput" class="form-control" readonly value="1017213692">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 my-1">
+                                        <button type="button" onclick="clipboardCopy()" class="btn btn-dark btn-icon">
+                                            <span class="btn-inner--icon">
+                                                <i data-feather="copy"></i>
+                                            </span>
+                                            <span class="btn-inner--text">Copy</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row align-items-center pt-4">
+                        <div class="col-12">
+                            <a href="pop" class="btn btn-primary btn-icon">
+                                <span class="btn-inner--icon">
+                                    <i data-feather="upload"></i>
+                                </span>
+                                <span class="btn-inner--text">Upload Payment Proof</span>
+                            </a>
+                            <button type="button" class="btn btn-danger btn-icon" data-dismiss="modal">
+                                <span class="btn-inner--icon">
+                                    <i data-feather="x-circle"></i>
+                                </span>
+                                <span class="btn-inner--text">Close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
