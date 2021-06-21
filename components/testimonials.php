@@ -2,7 +2,7 @@
         <div class="container pt-5">
             <div class="row mb-5 text-center">
                 <div class="col-lg-8 mx-auto">
-                    <h5 class=h4>Trusted by over 50+ of the Nigeria’s leading companies</h5>
+                    <h5 class=h4>Trusted by over 500+ of the Nigeria’s leading companies</h5>
                 </div>
             </div>
             <div class=row>
@@ -17,7 +17,7 @@
                                 <i data-feather=star class="star voted"></i>
                             </span>
                             <div class="mb-4 flex-grow-1">
-                                <h4 class="h5 lh-160 mb-0">“I sort out for their services out of desperation, and i got a 150% service delivery with professionalism.”</h4>
+                                <h4 class="h5 lh-160 mb-0">“I was completely blown away with their services. They helped protect us from hiring a driver with the track record of child molestation.”</h4>
                             </div>
                             <div class="media align-items-center">
                                 <div>
@@ -46,7 +46,7 @@
                             </span>
                             <div
                                 class="mb-4 flex-grow-1">
-                                <h4 class="h5 lh-160 mb-0">“We've had issues of employee carting away with valuables, but with iverify we're able to verify guarantors & employees.”</h4>
+                                <h4 class="h5 lh-160 mb-0">“We've had issues with employee theft in our retail brand, when iVerify&trade; came onboard, we embraced pre-employement verification and theft became history.”</h4>
                             </div>
                             <div class="media align-items-center">
                                 <div>
@@ -74,7 +74,7 @@
                                 <i data-feather=star class="star voted"></i>
                             </span>
                             <div class="mb-4 flex-grow-1">
-                                <h4 class="h5 lh-160 mb-0">“There is a need for iverify, with Traders of Africa we've benefited alot from iverify.”</h4>
+                                <h4 class="h5 lh-160 mb-0">“Traders of Africa has benefited alot from the services of iVerify&trade;. from employee verification to suppliers and buyers due diligence.”</h4>
                             </div>
                             <div class="media align-items-center">
                                 <div>

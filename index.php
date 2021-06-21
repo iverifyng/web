@@ -87,9 +87,12 @@ include "./components/navbar.php";
         <div class=container>
             <div class="row row-grid justify-content-between align-items-center">
                 <div class="col-lg-5 order-lg-2">
-                    <h5 class=h3>Identity Is A Right, Not A Privilege.<br>What we stand for.</h5>
-                    <p class="lead my-4">iVerify&trade; provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification and referencing model.</p>
-                    <p class="lead my-4">With over ten years experience in data verification and referencing, interfacing with the corporate, commercial and private sector to convey credible, reliable and trusted data upon requests to authorized persons of interest, we have developed a topnotch data solution to all sectors in need of the data verification and referencing services.</p>
+                    <h5 class=h3>Identity is a Right, not a Privilege.<br>What we stand for.</h5>
+                    <p class="lead my-4">iVerify™ provides competent background check services for companies and individuals in Nigeria to help automate their verification processes and improve access to information.</p>
+                    <p class="lead my-4"><span class="badge badge-dark">Integrity</span> We believe in the integrity of the process and the product.</p>
+                    <p class="lead my-4"><span class="badge badge-dark">Security</span> With us your safety is guaranteed.</p>
+                    <p class="lead my-4"><span class="badge badge-dark">Equality</span> Everyone has equal right to verify and be verified.</p>
+                    <p class="lead my-4"><span class="badge badge-dark">Equality</span> We say and we deliver.</p>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="mb-0">

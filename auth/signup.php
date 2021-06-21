@@ -83,16 +83,16 @@ $_SESSION['notify'];
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--<div class=preloader>
-        <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+        <div class="spinner-border text-dark" role=status><span class=sr-only>Loading...</span></div>
     </div>-->
     <button onclick="goBack()" class="btn btn-white btn-icon-only rounded-circle position-absolute zindex-101 left-4 top-4 d-none d-lg-inline-flex" data-toggle=tooltip data-placement=right title="Go back"><span class=btn-inner--icon><i data-feather=arrow-left></i></span></button>
     <section>
-        <div class="bg-primary position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center>
+        <div class="bg-dark position-absolute h-100 top-0 left-0 zindex-100 col-lg-6 col-xl-6 zindex-100 d-none d-lg-flex flex-column justify-content-end" data-bg-size=cover data-bg-position=center>
             <div class="mask bg-gradient-dark opacity-8">
                 <img src="../assets/img/backgrounds/signupbg2.jpg" alt="Image" class="img-as-bg">
             </div>
             <div class="row position-relative zindex-110 p-5">
-                <div class="col-md-8 text-center mx-auto"><span class="badge badge-primary badge-pill">Great Move</span>
+                <div class="col-md-8 text-center mx-auto"><span class="badge badge-dark badge-pill">Great Move</span>
                     <h5 class="h5 text-white mt-3">Join the iverify Tribe😇</h5>
                 </div>
             </div>
@@ -109,7 +109,7 @@ $_SESSION['notify'];
                                 </div><span class=clearfix></span>
                                 <!-- personal form-->
                                 <div class="form-group btn-group btn-group-toggle" data-toggle="buttons" style="inline-size: -webkit-fill-available;">
-                                    <label class="btn showbtn btn-soft-primary active">
+                                    <label class="btn showbtn btn-soft-dark active">
                                         <input type="radio" name="accountType" checked> Personal
                                     </label>
                                     <label class="btn hidebtn btn-soft-success">
@@ -160,7 +160,7 @@ $_SESSION['notify'];
                                     <div class="form-group mb-0">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div><label class=form-control-label>Password</label></div>
-                                            <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-primary" data-toggle=password-text data-target=#input-password>Show password</a></div>
+                                            <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-dark" data-toggle=password-text data-target=#input-password>Show password</a></div>
                                         </div>
                                         <div class=input-group>
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div>
@@ -173,7 +173,7 @@ $_SESSION['notify'];
                                         </div>
                                     </div>
                                     <div class=mt-4>
-                                        <button class="btn btn-block btn-primary" name="signup_btn" type="submit">Create my account</button>
+                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit">Create my account</button>
                                     </div>
                                 </form>
                                 <!-- Corporate form-->
@@ -232,7 +232,7 @@ $_SESSION['notify'];
                                     <div class="form-group mb-0">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div><label class=form-control-label>Password</label></div>
-                                            <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-primary" data-toggle=password-text data-target=#input-password>Show password</a></div>
+                                            <div class=mb-2><a href=# class="small text-muted text-underline--dashed border-dark" data-toggle=password-text data-target=#input-password>Show password</a></div>
                                         </div>
                                         <div class=input-group>
                                             <div class=input-group-prepend><span class=input-group-text><i data-feather=key></i></span></div>
@@ -245,7 +245,7 @@ $_SESSION['notify'];
                                         </div>
                                     </div>
                                     <div class=mt-4>
-                                        <button class="btn btn-block btn-primary" name="signup_btn" type="submit">Create my account</button>
+                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit">Create my account</button>
                                     </div>
                                 </form>
                                 <div class=mt-4><small>Already have an account?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
