@@ -17,7 +17,7 @@
                                 <i data-feather=star class="star voted"></i>
                             </span>
                             <div class="mb-4 flex-grow-1">
-                                <h4 class="h5 lh-160 mb-0">“I was completely blown away with their services. They helped protect us from hiring a driver with the track record of child molestation.”</h4>
+                                <h4 class="h5 lh-160 mb-0">“I was completely blown away with their services. They helped protect us from hiring a driver with track record of child molestation.”</h4>
                             </div>
                             <div class="media align-items-center">
                                 <div>
@@ -74,7 +74,7 @@
                                 <i data-feather=star class="star voted"></i>
                             </span>
                             <div class="mb-4 flex-grow-1">
-                                <h4 class="h5 lh-160 mb-0">“Traders of Africa has benefited alot from the services of iVerify&trade;. from employee verification to suppliers and buyers due diligence.”</h4>
+                                <h4 class="h5 lh-160 mb-0">“Traders of Africa has benefited a lot from the services of iVerify&trade;. From employee verification to suppliers and buyers due diligence...”</h4>
                             </div>
                             <div class="media align-items-center">
                                 <div>

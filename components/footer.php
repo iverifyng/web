@@ -9,7 +9,7 @@
                         <div class="row align-items-center">
                             <div class=col-lg-7>
                             <h3 class="text-secondary mb-2">Redefining Identity Verification in Nigeria.</h3>
-                                <p class="lead mb-0 text-white opacity-8">We provide a topnoch identity verification to fuel your brand growth.</p>
+                                <p class="lead mb-0 text-white opacity-8">We provide topnoch identity verification to fuel your brand growth.</p>
                             </div>
                             <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
                                 <a href=auth/signup class="btn btn-white btn-icon my-2"><span class=btn-inner--text>Get Started</span> </a>
@@ -20,9 +20,8 @@
                 <hr class="divider divider-fade divider-dark my-5">
                 <div class=row>
                     <div class="col-lg-4 mb-5 mb-lg-0"><a href=\><img alt="iverify Logo" src=https://i.imgur.com/wSnqo7B.png id=footer-logo style="width: 150px;"></a>
-                        <p class="mt-4 text-sm opacity-8 pr-lg-4">iVerify provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification and referencing model.</p>
                         <ul class="nav mt-4">
-                            <li class=nav-item><a class="nav-link pl-0" href=https://dribbble.com/webpixels target=_blank><i class="fab fa-linkedin"></i></a></li>
+                            <li class=nav-item><a class="nav-link pl-0" href=https://www.linkedin.com/company/iverify-ng/ target=_blank><i class="fab fa-linkedin"></i></a></li>
                             <!--<li class=nav-item><a class=nav-link href=https://twitter.com target=_blank><i class="fab fa-twitter"></i></a></li>-->
                             <li class=nav-item><a class=nav-link href=https://www.instagram.com/iverify.ng/ target=_blank><i class="fab fa-instagram"></i></a></li>
                             <li class=nav-item><a class=nav-link href=https://facebook.com/iverifyng-110319737124766/ target=_blank><i class="fab fa-facebook"></i></a></li>
