@@ -77,7 +77,7 @@ include "./components/navbar.php";
                         <div class=icon><img alt="Image placeholder" src=./assets/img/svg/icons/Enterprise.svg class="svg-inject img-fluid"></div>
                     </div>
                     <h5 class="">Tenant Verification</h5>
-                    <p class="text-muted mb-0">We guarantee that our efficient services and Tenant verification solution ensure Landlords, property managers, real estate brokers and agents protect their rental income and minimize exposure to high-risk tenants.</p>
+                    <p class="text-muted mb-0">We guarantee that our efficient property and tenant verification solution ensure investors, landlords, property managers, real estate brokers and agents protect their interest in property, and minimize exposure to high-risk transactions.</p>
                 </div>
             </div>
         </div>
