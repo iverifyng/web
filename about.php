@@ -8,10 +8,10 @@ include "./components/navbarlight.php";
             <div class="col px-0">
                 <div class="row row-grid align-items-center">
                     <div class="col-lg-8 text-center text-lg-left">
-                        <h1 class="text-white mb-4">Individual or corporate business,<br>We’re here for you.</h1>
-                        <p class="lead text-white opacity-8">We are focused on solving some of Nigeria’s biggest challenges in Identity, Company, Certificate, Employee, Tenant and Property Verification for People and Businesses.</p>
+                        <h1 class="text-white mb-4">Are you a corporate business or individual. We’re here for you.</h1>
+                        <p class="lead text-white opacity-8">We are focused on solving and digitizing Nigeria’s biggest identity challenges, through Company, Certificate, Employee, Tenant and Property Verification for individuals and businesses.</p>
                         <div class=mt-5>
-                            <a href=contact class="btn btn-primary btn-lg btn-icon">
+                            <a href=contact class="btn btn-warning btn-lg btn-icon">
                                 <span class=btn-inner--icon><i data-feather=edit-3></i> </span>
                                 <span class=btn-inner--text>Contact us</span>
                             </a>
@@ -37,14 +37,14 @@ include "./components/navbarlight.php";
             <div class="row mt-4">
                 <div class="col-lg-6 pr-lg-5">
                     <div>
-                        <span class="badge badge-primary">Our vision</span>
+                        <span class="badge badge-dark">Our vision</span>
                     </div>
                     <p class="h5 lh-180 mb-3">To redefine access to information digitally for economic growth.</p>
                 </div>
 
                 <div class="col-lg-6 pr-lg-5">
                     <div>
-                        <span class="badge badge-primary">Our Mission</span>
+                        <span class="badge badge-dark">Our Mission</span>
                     </div>
                     <p class="h5 lh-180 mb-3">To Build an Integrated Verification Solution Platform For Sustainable Digital Transformation.</p>
                 </div>
