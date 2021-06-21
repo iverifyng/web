@@ -7,7 +7,7 @@ include "./components/navbar.php";
             <div class="row justify-content-center">
                 <div class=col-lg-9>
                     <h2 class="mb-4 text-center text-white">Get quick answers to your questions<br>about iverify.ng</h2>
-                    <h6 class="text-white text-center font-weight-light mb-0">iverify.ng is a technology company solving verification problems <br>for ambitious businesses and individuals.</h6>
+                    <h6 class="text-white text-center font-weight-light mb-0">iverify.ng is a technology company solving identity problems <br>for businesses and individuals in Nigeria through verification.</h6>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@ include "./components/navbar.php";
                                 <div id=collapse-1-9 class=collapse aria-labelledby=heading-1-9 data-parent=#accordion-1>
                                     <div class=card-body>
                                         <p>
-                                            This is a category of verification reserved for those that wish to validate certificates from the following areas:
+                                            This is a category of verification reserved for those that wish to validate certificates from the following areas.<br> The certificates that can verified includes:
                                         <ul>
                                             <li>Birth certificate, Marriage certificate, university certificate, other academic institution, Professional certificates, NYSC certificates etc.</li>
                                         </ul>
