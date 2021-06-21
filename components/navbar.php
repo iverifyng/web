@@ -29,7 +29,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=tenant-verification class="d-block h6 mb-0">Tenant Verification</a>
-                                                            <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
+                                                            <small class="text-sm text-muted mb-0">Return on investment is easier with us.</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -41,7 +41,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=company-verification class="d-block h6 mb-0">Company Verification</a>
-                                                            <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
+                                                            <small class="text-sm text-muted mb-0">Broaden your scope of operations with us.</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -53,7 +53,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=certificate-verification class="d-block h6 mb-0">Certificate Verification</a>
-                                                            <small class="text-sm text-muted mb-0">Account management made easy.</small>
+                                                            <small class="text-sm text-muted mb-0">I earned it, Yes, verify!</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -82,7 +82,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=domestic-employee class="d-block h6 mb-0">Domestic Employee Verification</a>
-                                                            <small class="text-sm text-muted mb-0">Account management made easy.</small>
+                                                            <small class="text-sm text-muted mb-0">Your safety & assurance is our priority.</small>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,7 +94,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=property-verification class="d-block h6 mb-0">Property Verification</a>
-                                                            <small class="text-sm text-muted mb-0">Get your dashboard nice and easy.</small>
+                                                            <small class="text-sm text-muted mb-0">Get it done,save the loss.</small>
                                                         </div>
                                                     </div>
                                                 </div>
