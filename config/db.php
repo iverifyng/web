@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'root', '', 'iverify');
+$conn = new mysqli('localhost', 'iverdsrg_new', 'Webify2020!!', 'iverdsrg_new');
 // Turn on error reporting
 error_reporting(E_ALL ^ E_NOTICE);
 // Check database connection
