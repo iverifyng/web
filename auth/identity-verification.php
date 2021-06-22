@@ -1,7 +1,7 @@
 <?php
 include "./components/header.php";
 include "./components/userstats.php";
-include "./components/navbar.php";
+//include "./components/navbar.php";
 ?>
 
     <section class="slice py-5 bg-section-secondary">
@@ -24,7 +24,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>National Identity Number <span class="text-sm text-muted">(NIN)</spann></h6>
+                                        <h6 class=mb-0>National Identity Number <span class="text-sm text-muted">(NIN)</span></h6>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ include "./components/navbar.php";
                                         </div>
                                     </div>
                                     <div class=mt-3>
-                                        <h6 class=mb-0>Bank Verification Number <span class="text-sm text-muted">(BVN)</spann></h6>
+                                        <h6 class=mb-0>Bank Verification Number <span class="text-sm text-muted">(BVN)</span></h6>
                                     </div>
                                 </div>
                             </div>

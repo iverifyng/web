@@ -2,6 +2,7 @@
 $page = 'Dashboard';
 include "./components/header.php";
 include "./components/userstats.php";
+//include "./components/navbar.php";
 include "./components/walletbalance.php";
 ?>
 
