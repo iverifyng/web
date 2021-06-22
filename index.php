@@ -92,7 +92,7 @@ include "./components/navbar.php";
                     <p class="lead my-4"><span class="badge badge-dark">Integrity</span> We believe in the integrity of the process and the product.</p>
                     <p class="lead my-4"><span class="badge badge-dark">Security</span> With us your safety is guaranteed.</p>
                     <p class="lead my-4"><span class="badge badge-dark">Equality</span> Everyone has equal right to verify and be verified.</p>
-                    <p class="lead my-4"><span class="badge badge-dark">Equality</span> We say and we deliver.</p>
+                    <p class="lead my-4"><span class="badge badge-dark">Credibility</span> We say and we deliver.</p>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="mb-0">
