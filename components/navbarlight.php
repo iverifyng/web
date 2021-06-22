@@ -65,7 +65,7 @@
                                                         </figure>
                                                         <div class="media-body ml-3">
                                                             <a href=corporate-employee class="d-block h6 mb-0">Corporate Employee Verification</a>
-                                                            <small class="text-sm text-muted mb-0">A starting point for any scenario.</small>
+                                                            <small class="text-sm text-muted mb-0">A starting point for any organisation.</small>
                                                         </div>
                                                     </div>
                                                 </div>
