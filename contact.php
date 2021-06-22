@@ -9,7 +9,7 @@ include "./components/navbar.php";
                     <div class=col-lg-6>
                         <h1 class="h1 text-white text-center text-lg-left my-4"><strong>We’re happy to help!</strong></h1>
                         <p class="lead text-white text-center text-lg-left opacity-8">Our team is happy to answer all your questions ASAP,<br>Do you have general enquiries or need support? Please hit the button below.</p>
-                        <div class="mt-5 text-center text-lg-left"><a href=#sct-form-contact data-scroll-to class="btn btn-white btn-lg btn-icon"><span class=btn-inner--icon><i data-feather=edit-2></i> </span><span class=btn-inner--text>Write a message</span></a></div>
+                        <div class="mt-5 text-center text-lg-left"><a href=#sct-form-contact data-scroll-to class="btn btn-warning text-dark btn-lg btn-icon"><span class=btn-inner--icon><i data-feather=edit-2></i> </span><span class=btn-inner--text>Write a message</span></a></div>
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-left mt-5">
                             <div class="col-auto text-sm text-white pl-0 pr-4">Trusted by:</div>
                             <div class="client-group col">
@@ -119,7 +119,7 @@ include "./components/navbar.php";
                             <textarea class="form-control form-control-lg" name="comment" data-toggle=autosize placeholder="Tell us a few words ..." rows=3 required></textarea></div>
                         <div class=text-center>
                             <button type=reset class="btn-reset d-none"></button>
-                            <button name="contact" id="contact" class="btn btn-block btn-lg btn-primary mt-4">Send your message</button>
+                            <button name="contact" id="contact" class="btn btn-block btn-lg btn-dark mt-4">Send your message</button>
                         </div>
                     </form>
                 </div>

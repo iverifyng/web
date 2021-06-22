@@ -41,7 +41,7 @@ include "./components/navbar.php";
                     </div>
                 </div>
                 <div class="position-lg-absolute bottom-lg-4 bottom-xl-0 right-lg-n10 mb-n5 mb-lg-0 mb-xl-n7 col-lg-10 col-xl-10 zindex-100">
-                    <div class="frame frame-laptop zindex-100 ml-lg-6"><img alt="Image placeholder" src=assets/img/slideimg1.svg class=img-fluid>
+                    <div class="frame frame-laptop zindex-100 ml-lg-6"><img alt="Image placeholder" src=assets/img/svg/slideimg001.svg class=img-fluid>
                         <!--<div class=frame-inner><img alt="Image placeholder" src=assets/img/theme/light/screen-2-1000x800.jpg class=img-fluid></div>-->
                     </div>
                     <div class="w-25 position-absolute top-n5 left-8 left-xl-9"><img alt="Image placeholder" src=assets/img/svg/shapes/dots-square.svg class="svg-inject img-fluid"></div>

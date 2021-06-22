@@ -11,7 +11,7 @@ include "./components/navbarlight.php";
                         <h1 class="text-white mb-4">Are you a corporate business or individual. We’re here for you.</h1>
                         <p class="lead text-white opacity-8">We are focused on solving and digitizing Nigeria’s biggest identity challenges, through Company, Certificate, Employee, Tenant and Property Verification for individuals and businesses.</p>
                         <div class=mt-5>
-                            <a href=contact class="btn btn-warning btn-lg btn-icon">
+                            <a href=contact class="btn btn-warning text-dark btn-lg btn-icon">
                                 <span class=btn-inner--icon><i data-feather=edit-3></i> </span>
                                 <span class=btn-inner--text>Contact us</span>
                             </a>

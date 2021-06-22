@@ -12,7 +12,7 @@
                                 <p class="lead mb-0 text-white opacity-8">We provide topnoch identity verification to fuel your brand growth.</p>
                             </div>
                             <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
-                                <a href=auth/signup class="btn btn-white btn-icon my-2"><span class=btn-inner--text>Get Started</span> </a>
+                                <a href=auth/signup class="btn btn-warning text-dark btn-icon my-2"><span class=btn-inner--text>Get Started</span> </a>
                             </div>
                         </div>
                     </div>

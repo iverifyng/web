@@ -4,7 +4,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 text-center">
                         <h2 class="display-4 text-white">Ready to secure your business?</h2>
-                        <h4 class="text-white mt-3">Hear what others have to say</h4><a href="./assets/vid/epicure.mp4" data-fancybox data-toggle=tooltip data-placement=bottom title="Play Video" class="btn btn-lg btn-warning btn-icon-only rounded-circle hover-scale-110 mt-4"><span class=btn-inner--icon><i data-feather=play></i></span></a></div>
+                        <h4 class="text-white mt-3">Hear what others have to say</h4><a href="./assets/vid/epicure.mp4" data-fancybox data-toggle=tooltip data-placement=bottom title="Play Video" class="btn btn-lg btn-warning text-dark btn-icon-only rounded-circle hover-scale-110 mt-4"><span class=btn-inner--icon><i data-feather=play></i></span></a></div>
                 </div>
             </div>
         </div>
