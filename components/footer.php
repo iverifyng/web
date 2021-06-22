@@ -27,6 +27,7 @@
                             <li class=nav-item><a class=nav-link href=https://facebook.com/iverifyng-110319737124766/ target=_blank><i class="fab fa-facebook"></i></a></li>
                         </ul>
                     </div>
+
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Information</h6>
                         <ul class=list-unstyled>
@@ -35,6 +36,7 @@
                             <li><a href=# onclick="tidioChatApi.open();">Chat with us</a></li>
                         </ul>
                     </div>
+
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Company</h6>
                         <ul class=list-unstyled>
@@ -43,6 +45,16 @@
                             <li><a href=careers>Careers</a></li>
                         </ul>
                     </div>
+
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Top 3 Services</h6>
+                        <ul class=list-unstyled>
+                            <li><a href=corporate-employee>Corporate Employee</a></li>
+                            <li><a href=domestic-employee>Domestic Employee</a></li>
+                            <li><a href=certificate-verification>Certificate Verification</a></li>
+                        </ul>
+                    </div>
+
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Legal</h6>
                         <ul class=list-unstyled>
