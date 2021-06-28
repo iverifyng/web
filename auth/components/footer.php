@@ -1,6 +1,9 @@
-<?php include "./components/infomodal.php"; ?>
+<?php
+include "infomodal.php";
+include "verification-modal.php"
+?>
 
-        <div class="modal modal-fluid fade" id="staticBackdrop" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+        <!--<div class="modal modal-fluid fade" id="staticBackdrop" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -29,7 +32,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <script src=../assets/libs/jquery/dist/jquery.min.js></script>
         <script src=../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
         <script src=../assets/libs/svg-injector/dist/svg-injector.min.js></script>
@@ -42,12 +45,50 @@
         <script src=../assets/js/main.js></script>
         <script src=../assets/js/app.js></script>
         <script src="https://api.flutterwave.com/v3/payments"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script>
             feather.replace({
                 width: "1em",
                 height: "1em"
             })
         </script>
+        <?php
+        if (isset($_SESSION['message']))
+        {
+            ?>
+            <script>
+                swal({
+                    title: "<?php echo $_SESSION['message_title']; ?>",
+                    text: "<?php echo $_SESSION['message']; ?>",
+                    icon: "error",
+                    buttons: false,
+                    timer: 5000
+                });
+            </script>
+            <?php
+            unset($_SESSION['message']);
+        }
+        ?>
+
+        <?php
+        if (isset($_SESSION['success_message']))
+        {
+            ?>
+            <script>
+                swal({
+                    title: "<?php echo $_SESSION['success_message_title']; ?>",
+                    text: "<?php echo $_SESSION['success_message']; ?>",
+                    icon: "success",
+                    buttons: false,
+                    timer: 4000
+                }).then(function() {
+                    window.location = "../auth/dashboard";
+                });
+            </script>
+            <?php
+            unset($_SESSION['success_message']);
+        }
+        ?>
         <script>
             ! function(e, t, a, n, g) {
                 e[n] = e[n] || [], e[n].push({

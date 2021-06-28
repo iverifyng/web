@@ -2,8 +2,11 @@
 $page = 'Dashboard';
 include "./components/header.php";
 include "./components/userstats.php";
-//include "./components/navbar.php";
+include "./components/navbar.php";
 include "./components/walletbalance.php";
+require_once "../controllers/query.php";
+
+
 ?>
 
     <section class="bg-section-secondary pb-5">
@@ -132,7 +135,10 @@ include "./components/walletbalance.php";
                                             </div>
                                         </div>
                                         <div class=text-right>
-                                            <button type=button class="btn btn-xs btn-neutral btn-icon"><span class=btn-inner--icon><i data-feather=plus></i></span> <span class="btn-inner--text ml-1">Verify</span></button>
+                                            <button data-toggle="modal" data-target="#employeeSelect" type=button class="btn btn-xs btn-neutral btn-icon">
+                                                <span class=btn-inner--icon><i data-feather=plus></i></span>
+                                                <span class="btn-inner--text ml-1">Verify</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class=mt-3>

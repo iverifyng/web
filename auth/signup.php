@@ -197,28 +197,6 @@ $_SESSION['notify'];
                                         </div>
                                     </div>
                                     <div class=form-group>
-                                        <label class=form-control-label>First Name</label>
-                                        <div class="input-group">
-                                            <div class=input-group-prepend>
-                                                <span class=input-group-text>
-                                                    <i data-feather=user></i>
-                                                </span>
-                                            </div>
-                                            <input type=text class="form-control form-control-prepend" required name="firstName" placeholder="John">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class=form-control-label>Last Name</label>
-                                        <div class="input-group">
-                                            <div class=input-group-prepend>
-                                                <span class=input-group-text>
-                                                    <i data-feather=user></i>
-                                                </span>
-                                            </div>
-                                            <input type=text class="form-control form-control-prepend" required name="lastName" placeholder="Doe">
-                                        </div>
-                                    </div>
-                                    <div class=form-group>
                                         <label class=form-control-label>Email address</label>
                                         <div class="input-group">
                                             <div class=input-group-prepend>

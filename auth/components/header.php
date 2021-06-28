@@ -1,6 +1,7 @@
 <?php
 //Connect Database
 require_once "../config/db.php";
+
 session_start();
 if (!isset($_SESSION['email'])) {
     header('location: login');
@@ -10,6 +11,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['email']);
     header("location: login");
 }
+
 ?>
 
 <!DOCTYPE html>

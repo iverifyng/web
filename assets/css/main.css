@@ -30041,3 +30041,8 @@ span.flatpickr-weekday {
     }
 }
 
+
+.modal-header {
+    border-bottom: 0px;
+    margin-bottom: -32px;
+}

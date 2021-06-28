@@ -9,8 +9,6 @@ if ($WEBSITE_ENVIRONMENT == "Development") {
     $user = "root";
     $password = "";
     $database = "iverify";
-    define("APP_ENVIRONMENT", "Development");
-    define("APP_BASE_URL", "http://localhost/web");
     error_reporting(E_ALL ^ E_NOTICE); // turn ON showing errors
 } else {
     $host = "localhost";

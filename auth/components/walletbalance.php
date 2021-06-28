@@ -6,7 +6,7 @@
             </div>
             <div class=col-auto>
                 <button type=button class="btn btn-sm btn-dark btn-icon">
-                    <span class=btn-inner--icon><i class="fas fa-wallet"></i>&#160;Wallet Balance:</span> ₦0
+                    <span class=btn-inner--icon><i class="fas fa-wallet"></i>&#160;Wallet Balance:</span> ₦<?php echo  $_SESSION['wallet']; ?>
                 </button>
             </div>
         </div>

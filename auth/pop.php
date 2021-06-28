@@ -4,7 +4,6 @@ include "./components/header.php";
 include "./components/userstats.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
-
 require_once "../controllers/query.php";
 ?>
     <section class="bg-section-secondary pb-5">
@@ -16,7 +15,7 @@ require_once "../controllers/query.php";
                             <div class="col-md-6" style="display: none">
                                 <div class="form-group">
                                     <label class="form-control-label">User ID</label>
-                                    <input class="form-control" type="text" readonly name="userId" value="<?php echo $_SESSION['id']; ?>">
+                                    <input class="form-control" type="number" readonly name="userId" value="<?php echo $_SESSION['id']; ?>">
                                 </div>
                             </div>
                             <div class="col-md-6" style="display: none">
@@ -59,7 +58,7 @@ require_once "../controllers/query.php";
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">Upload Proof of Payment</label>
-                                    <input type="file" name="proof" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" multiple />
+                                    <input type="file" name="proof" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" />
                                     <label for="file-1">
                                         <i data-feather="upload"></i>
                                         <span>Choose a file…</span>
@@ -76,7 +75,7 @@ require_once "../controllers/query.php";
                                         </span>
                                         <span class="btn-inner--text">Send Proof of Payment</span>
                                     </button>
-                                    <small class="form-text text-muted mt-2">This is the main email address that we'll send notifications.</small>
+                                    <small class="form-text text-muted mt-2">Account will be topped up once payment has be confirmed.</small>
                                 </div>
                             </div>
                         </div>

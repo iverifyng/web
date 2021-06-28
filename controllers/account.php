@@ -26,7 +26,7 @@ if (isset($_POST['signup_btn'])) {
             echo '<button class="btn btn-secondary" data-toggle="notify" data-placement="bottom" data-align="right" data-type="dark" data-icon="fas fa-envelope-open">Bottom Right</button>  ';
             session_unset('notify');
         }
-        $_SESSION['message_title'] = "Agent Already Exist!";
+        $_SESSION['message_title'] = "User Already Exist!";
         $_SESSION['message'] = "Modify or Delete user details";
     }else {
         // Finally, register agent if there are no errors in the form
@@ -76,6 +76,7 @@ if (isset($_POST['user_login_btn'])) {
         $verified = $row['verified'];
         $picture = $row['picture'];
         $phone = $row['phone'];
+        $wallet = $row['wallet'];
         $accountType = $row['accountType'];
         $securityKey = $row['securityKey'];
 
@@ -86,6 +87,7 @@ if (isset($_POST['user_login_btn'])) {
         $_SESSION['picture'] = $picture;
         $_SESSION['email'] = $email;
         $_SESSION['phone'] = $phone;
+        $_SESSION['wallet'] = $wallet;
         $_SESSION['accountType'] = $accountType;
         $_SESSION['securityKey'] = $securityKey;
         $_SESSION['id'] = $id;
@@ -94,7 +96,7 @@ if (isset($_POST['user_login_btn'])) {
             $_SESSION['message'] = "Please contact our customer care.";
         }if ($status == 'Active') {
             if ($verified == 0) {
-                $_SESSION['message_title'] = "Email not Verified";
+                $_SESSION['message_title'] = "Email not verified";
                 $_SESSION['message'] = "Check your email to verify account.";
             }if ($verified == 1) {
                 header('location: dashboard');
