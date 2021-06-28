@@ -13,17 +13,17 @@
                             <a class=nav-link href=dashboard>Dashboard</a>
                         </li>
 
-                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='portfolio'){echo 'active';}?>">
+                        <!--<li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='portfolio'){echo 'active';}?>">
                             <a class=nav-link href=history>Records</a>
-                        </li>
+                        </li>-->
 
                         <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Topup'){echo 'active';}?>">
                             <a class=nav-link href="topup">Topup</a>
                         </li>
 
-                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Account'){echo 'active';}?>">
+                        <!--<li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Account'){echo 'active';}?>">
                             <a class=nav-link href="account">My Account</a>
-                        </li>
+                        </li>-->
                     </ul>
                     </ul>
                 <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">

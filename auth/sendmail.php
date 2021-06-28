@@ -100,7 +100,7 @@ function sendVerificationEmail($userEmail, $token)
                                                 </tr>
                                                 <tr>
                                                     <td class=\'pdl-3x pdr-3x pdb-2x\'>
-                                                        <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Hello'. $firstName .',</b></p>
+                                                        <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Hello Chief,</b></p>
                                                         <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center">Thank you for joining <b>iVerify™</b><br>By clicking on the button or link below,<br>you will be verifying your email address.</p>
                                                         <p style="text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;">
                                                         <a href="https://iverify.ng/auth/verify_email?token=' . $token . '" class=\'btn\' style="color: #ffffff; text-decoration: none;">Verify Account</a><br>
