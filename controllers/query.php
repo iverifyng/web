@@ -6,19 +6,17 @@ include "../config/db.php";
 if (isset($_POST['pop_btn'])) {
     $id = $conn->real_escape_string($_POST['id']);
     $userID = $conn->real_escape_string($_POST['userID']);
-    $firstName = $conn->real_escape_string($_POST['firstName']);
-    $lastName = $conn->real_escape_string($_POST['lastName']);
     $sendersAccName = $conn->real_escape_string($_POST['sendersAccName']);
     $sendersBank = $conn->real_escape_string($_POST['sendersBank']);
     $amount = $conn->real_escape_string($_POST['amount']);
-    $proof_path  = $conn->real_escape_string('upload/'.$_FILES['proof']['name']);
-    $transRef = 'REF'.rand(10000000000, 9999);
+    $proof_path  = $conn->real_escape_string('../upload/'.$_FILES['proof']['name']);
+    $transRef = 'REF_'.rand(10000000000, 9999);
     $paymentType = $conn->real_escape_string($_POST['paymentType']);
-    $status = $conn->real_escape_string($_POST['status']);
+    $paymentStatus = $conn->real_escape_string($_POST['paymentStatus']);
 
     if (file_exists($proof_path))
     {
-        $proof_path = $conn->real_escape_string('upload/'.uniqid().rand().$_FILES['proof']['name']);
+        $proof_path = $conn->real_escape_string('../upload/'.uniqid().rand().$_FILES['proof']['name']);
     }
 
     $checker = 0;
@@ -32,8 +30,8 @@ if (isset($_POST['pop_btn'])) {
     }
 
 
-    $query = "INSERT INTO topup (userID, firstName, lastName, sendersAccName, sendersBank, amount, proof, transRef, paymentType, status)"
-        . "VALUES ('$userID', '$firstName', '$lastName', '$sendersAccName', '$sendersBank', '$amount', '$proof_path', '$transRef', '$paymentType', '$status')";
+    $query = "INSERT INTO wallet_topup (userID, sendersAccName, sendersBank, amount, proof, transRef, paymentType, paymentStatus)"
+        . "VALUES ('$userID', '$sendersAccName', '$sendersBank', '$amount', '$proof_path', '$transRef', 'Bank Transfer', 'Pending')";
 
     mysqli_query($conn, $query);
     if (mysqli_affected_rows($conn) > 0) {
@@ -41,8 +39,8 @@ if (isset($_POST['pop_btn'])) {
         //copy image to upload folder
         copy($_FILES['proof']['tmp_name'], $proof_path);
 
-        $_SESSION['report_title'] = "Report Added";
-        $_SESSION['report_message'] = "Gurantor Verification has been added 👍";
+        $_SESSION['pop_success_message_title'] = "Payment Proof Uploaded";
+        $_SESSION['pop_success_message'] = "Wallet will be credited once payment is verified.";
     }
     else {
         $error=$conn->error;

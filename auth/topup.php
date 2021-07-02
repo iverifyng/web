@@ -4,6 +4,8 @@ include "./components/header.php";
 include "./components/userstats.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
+require_once "../controllers/query.php";
+$userID  = $_SESSION['userID'];
 ?>
 
     <section class="bg-section-secondary pb-5">
@@ -90,62 +92,77 @@ include "./components/walletbalance.php";
                     <hr class=my-5>
                     <div>
                         <h5 class=mb-4>Topup history</h5>
-                        <div class=table-responsive>
-                            <table class="table align-items-center">
+                        <div class="table-responsive">
+                            <table id="datatables-basic" class="table table-striped" style="width:100%">
                                 <thead>
                                 <tr>
-                                    <th scope=col>Description</th>
-                                    <th scope=col>Date</th>
-                                    <th scope=col>Amount</th>
-                                    <th scope=col>Balance</th>
-                                    <th scope=col>Status</th>
-                                    <th></th>
+                                    <th>Transaction Ref.</th>
+                                    <th>Amount</th>
+                                    <th>Mode of Payment</th>
+                                    <th>date</th>
+                                    <th>Status</th>
+                                    <th class="text-right">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <th scope=row><span class=client>Apple Inc</span></th>
-                                    <td class=order><span class=date>10/09/2018</span></td>
-                                    <td><span class="value text-sm mb-0">$1.274,89</span></td>
-                                    <td><span class="taxes text-sm mb-0">$1.115,45</span></td>
-                                    <td><span class="badge badge-danger">Failed</span></td>
-                                    <td>
-                                        <div class="actions text-right ml-3"><a href=# class="action-item mr-2" data-toggle=tooltip title=Edit><i data-feather=edit-2></i> </a><a href=# class="action-item mr-2" data-toggle=tooltip title=Invoice><i data-feather=file-text></i></a>
-                                            <div class=dropdown><a href=# class=action-item role=button data-toggle=dropdown aria-haspopup=true data-expanded=false><i data-feather=more-vertical></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"><a href=#! class=dropdown-item>Action </a><a href=#! class=dropdown-item>Another action </a><a href=#! class=dropdown-item>Something else here</a></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope=row><span class=client>Apple Inc</span></th>
-                                    <td class=order><span class=date>10/09/2018</span></td>
-                                    <td><span class="value text-sm mb-0">$1.274,89</span></td>
-                                    <td><span class="taxes text-sm mb-0">$1.115,45</span></td>
-                                    <td><span class="badge badge-success">Success</span></td>
-                                    <td>
-                                        <div class="actions text-right ml-3"><a href=# class="action-item mr-2" data-toggle=tooltip title=Edit><i data-feather=edit-2></i> </a><a href=# class="action-item mr-2" data-toggle=tooltip title=Invoice><i data-feather=file-text></i></a>
-                                            <div class=dropdown><a href=# class=action-item role=button data-toggle=dropdown aria-haspopup=true data-expanded=false><i data-feather=more-vertical></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"><a href=#! class=dropdown-item>Action </a><a href=#! class=dropdown-item>Another action </a><a href=#! class=dropdown-item>Something else here</a></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope=row><span class=client>Apple Inc</span></th>
-                                    <td class=order><span class=date>10/09/2018</span></td>
-                                    <td><span class="value text-sm mb-0">$1.274,89</span></td>
-                                    <td><span class="taxes text-sm mb-0">$1.115,45</span></td>
-                                    <td><span class="badge badge-info">Pending</span></td>
-                                    <td>
-                                        <div class="actions text-right ml-3"><a href=# class="action-item mr-2" data-toggle=tooltip title=Edit><i data-feather=edit-2></i> </a><a href=# class="action-item mr-2" data-toggle=tooltip title=Invoice><i data-feather=file-text></i></a>
-                                            <div class=dropdown><a href=# class=action-item role=button data-toggle=dropdown aria-haspopup=true data-expanded=false><i data-feather=more-vertical></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"><a href=#! class=dropdown-item>Action </a><a href=#! class=dropdown-item>Another action </a><a href=#! class=dropdown-item>Something else here</a></div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <?php
+                                $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";;
+                                $result = mysqli_query($conn, $select_query);
+                                if (mysqli_num_rows($result) > 0) {
+                                    // output data of each row
+                                    while($row = mysqli_fetch_assoc($result)) {
+                                        $id = $row['id'];
+                                        $userID = $row['userID'];
+                                        $transRef = $row['transRef'];
+                                        $amount = $row['amount'];
+                                        $sendersAccName = $row['sendersAccName'];
+                                        $sendersBank  = $row['sendersBank'];
+                                        $paymentType = $row['paymentType'];
+                                        $dateDeposited = $row['dateDeposited'];
+                                        $paymentStatus = $row['paymentStatus'];
+                                        switch ($paymentStatus) {
+                                            case "Pending";
+                                                $class  = 'badge-warning';
+                                                break;
+                                            case "Successful";
+                                                $class  = 'badge-success';
+                                                break;
+                                            case "Failed";
+                                                $class  = 'badge-danger';
+                                                break;
+                                            default:
+                                                $class  = '';
+                                        }
+
+                                        echo "<tr>";
+                                        echo "<td class=\"budget\">" .$transRef. "</td>";
+                                        echo "<td class=\"budget\">" ."₦".$amount. "</td>";
+                                        echo "<td class=\"budget\">" .$paymentType. "</td>";
+                                        echo "<td class=\"budget\">" .date("d(D) M Y", strtotime($dateDeposited)). "</td>";
+                                        echo "<td>" ."<span class=\"badge $class\">$paymentStatus</span> </span>". "</td>";
+
+                                        echo "<td class='text-right'>"
+                                            ."<div class=\"actions text-right ml-3\">
+                                                <a href=# class=\"action-item mr-2\" data-toggle=tooltip title='Payment Invoice'><i data-feather=file-text></i></a>
+                                              </div>".
+                                            "</td >";
+                                        "</tr>";
+                                    }
+                                }else {
+                                    echo "<td><p>No Topup Yet!</p></td>";
+                                }
+                                ?>
                                 </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th>Transaction Ref.</th>
+                                    <th>Amount</th>
+                                    <th>Mode of Payment</th>
+                                    <th>date</th>
+                                    <th>Status</th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                                </tfoot>
                             </table>
                         </div>
                     </div>

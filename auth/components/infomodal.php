@@ -220,12 +220,12 @@
                     </div>
                     <div class="row align-items-center pt-4">
                         <div class="col-12">
-                            <a href="pop" class="btn btn-primary btn-icon">
+                            <button class="btn btn-primary btn-icon" data-toggle="modal" data-dismiss="modal" data-target="#paymentProof">
                                 <span class="btn-inner--icon">
                                     <i data-feather="upload"></i>
                                 </span>
                                 <span class="btn-inner--text">Upload Payment Proof</span>
-                            </a>
+                            </button>
                             <button type="button" class="btn btn-danger btn-icon" data-dismiss="modal">
                                 <span class="btn-inner--icon">
                                     <i data-feather="x-circle"></i>
@@ -281,12 +281,12 @@
                     </div>
                     <div class="row align-items-center pt-4">
                         <div class="col-12">
-                            <a href="pop" class="btn btn-primary btn-icon">
+                            <button class="btn btn-primary btn-icon" data-toggle="modal" data-dismiss="modal" data-target="#paymentProof">
                                 <span class="btn-inner--icon">
                                     <i data-feather="upload"></i>
                                 </span>
                                 <span class="btn-inner--text">Upload Payment Proof</span>
-                            </a>
+                            </button>
                             <button type="button" class="btn btn-danger btn-icon" data-dismiss="modal">
                                 <span class="btn-inner--icon">
                                     <i data-feather="x-circle"></i>

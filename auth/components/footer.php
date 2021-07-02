@@ -46,6 +46,22 @@ include "verification-modal.php"
         <script src=../assets/js/app.js></script>
         <script src="https://api.flutterwave.com/v3/payments"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(function() {
+                // Datatables basic
+                $('#datatables-basic').DataTable({
+                    responsive: true
+                });
+                // Datatables with Buttons
+                var datatablesButtons = $('#datatables-buttons').DataTable({
+                    lengthChange: !1,
+                    buttons: ["copy", "print"],
+                    responsive: true
+                });
+                datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
+            });
+        </script>
         <script>
             feather.replace({
                 width: "1em",
@@ -87,6 +103,26 @@ include "verification-modal.php"
             </script>
             <?php
             unset($_SESSION['success_message']);
+        }
+        ?>
+
+        <?php
+        if (isset($_SESSION['pop_success_message']))
+        {
+            ?>
+            <script>
+                swal({
+                    title: "<?php echo $_SESSION['pop_success_message_title']; ?>",
+                    text: "<?php echo $_SESSION['pop_success_message']; ?>",
+                    icon: "success",
+                    buttons: false,
+                    timer: 4000
+                }).then(function() {
+                    window.location = "../auth/topup";
+                });
+            </script>
+            <?php
+            unset($_SESSION['pop_success_message']);
         }
         ?>
         <script>

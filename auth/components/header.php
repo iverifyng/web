@@ -79,6 +79,7 @@ if (isset($_GET['logout'])) {
     <link rel="shortcut icon" href="https://i.imgur.com/muLDDf6.png"/>
     <link rel=stylesheet href=../assets/libs/%40fortawesome/fontawesome-free/css/all.min.css>
     <link rel=stylesheet href=../assets/css/main.css id=stylesheet>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" type="text/css">
 </head>
 
 <body class="bg-section-secondary">

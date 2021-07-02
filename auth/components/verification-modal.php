@@ -1,3 +1,82 @@
+<!-- Proof of Payment Details -->
+<div class="modal modal-fluid fade" id="paymentProof" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 pb-4 text-center">
+                        <div class="">
+                            <img src="../assets/img/svg/bill.svg" class="img-fluid img-center pb-2" style=width:100px;height:100px>
+                            <small class="form-text text-muted mt-2"><span style="color: red">NOTE:</span> Account will be credited once payment has be confirmed.</small>
+                        </div>
+                    </div>
+                    <div class="col align-items-center">
+                        <div class=col-md-12>
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">User ID</label>
+                                            <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Sender's Account Name</label>
+                                            <input class="form-control" type="text" name="sendersAccName" placeholder="Kelechi Kayode Aminu">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Sender's Bank Name</label>
+                                            <input class="form-control" type="text" name="sendersBank" placeholder="Providus Bank">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Deposited Amount</label>
+                                            <div class="input-group input-group-merge">
+                                                <input type="text" class="form-control form-control-prepend" name="amount" placeholder=5100 aria-label="Topup Amount">
+                                                <div class=input-group-prepend><span class="input-group-text"><i>₦</i></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Upload Proof of Payment <span class="btn-inner--icon" data-toggle="tooltip" data-placement="right" title="Ulpoad Screenshot of your payment">
+                                                    <i data-feather="alert-circle"></i></span>
+                                            </label>
+                                            <input type="file" name="proof" id="proof" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="proof">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pb-2 pt-2">
+                                    <button type=submit name="pop_btn" class="btn btn-block btn-dark">Upload Proof of Payment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Employee Select -->
 <div class="modal modal-fluid fade" id="employeeSelect" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
