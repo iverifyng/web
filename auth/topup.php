@@ -5,7 +5,6 @@ include "./components/userstats.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
-$userID  = $_SESSION['userID'];
 ?>
 
     <section class="bg-section-secondary pb-5">

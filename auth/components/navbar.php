@@ -13,9 +13,9 @@
                             <a class=nav-link href=dashboard>Dashboard</a>
                         </li>
 
-                        <!--<li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='portfolio'){echo 'active';}?>">
+                        <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Records'){echo 'active';}?>">
                             <a class=nav-link href=history>Records</a>
-                        </li>-->
+                        </li>
 
                         <li class="nav-item nav-item-spaced d-none d-lg-block <?php if($page=='Topup'){echo 'active';}?>">
                             <a class=nav-link href="topup">Topup</a>

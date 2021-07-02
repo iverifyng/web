@@ -60,7 +60,7 @@ if (isset($_POST['domestic_employee_btn'])) {
     $employee_lastName = $conn->real_escape_string($_POST['employee_lastName']);
     $meansOfID_path  = $conn->real_escape_string('../upload/'.$_FILES['meansOfID']['name']);
     $curriculumVitae_path  = $conn->real_escape_string('../upload/'.$_FILES['curriculumVitae']['name']);
-    $searchRef = 'REF'.rand(10000000000, 9999);
+    $searchRef = 'REF_'.rand(10000000000, 9999);
 
     if (file_exists($meansOfID_path))
     {
