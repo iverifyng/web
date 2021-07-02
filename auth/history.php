@@ -110,7 +110,7 @@ require_once "../controllers/query.php";
                                     "</tr>";
                                 }
                             }else {
-                                echo "<td><p>No Topup Yet!</p></td>";
+                                echo "<td><p>No Verification Request Yet!</p></td>";
                             }
                             ?>
                             </tbody>
