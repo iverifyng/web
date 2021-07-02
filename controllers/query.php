@@ -25,6 +25,9 @@ if (isset($_POST['pop_btn'])) {
     if (preg_match("!image!", $_FILES['proof']['type'])) {
         $checker ++;
     }
+    if (preg_match("!pdf!", $_FILES['proof']['type'])) {
+        $checker ++;
+    }
     if ($checker < 1){
         exit;
     }

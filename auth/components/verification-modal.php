@@ -22,21 +22,21 @@
                                     <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">User ID</label>
-                                            <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
+                                            <input class="form-control" type="text" required name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Sender's Account Name</label>
-                                            <input class="form-control" type="text" name="sendersAccName" placeholder="Kelechi Kayode Aminu">
+                                            <input class="form-control" type="text" required name="sendersAccName" placeholder="Kelechi Kayode Aminu">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Sender's Bank Name</label>
-                                            <input class="form-control" type="text" name="sendersBank" placeholder="Providus Bank">
+                                            <input class="form-control" type="text" required name="sendersBank" placeholder="Providus Bank">
                                         </div>
                                     </div>
 
@@ -44,7 +44,7 @@
                                         <div class="form-group">
                                             <label class="form-control-label">Deposited Amount</label>
                                             <div class="input-group input-group-merge">
-                                                <input type="text" class="form-control form-control-prepend" name="amount" placeholder=5100 aria-label="Topup Amount">
+                                                <input type="text" class="form-control form-control-prepend" required name="amount" placeholder=5100 aria-label="Topup Amount">
                                                 <div class=input-group-prepend><span class="input-group-text"><i>₦</i></span></div>
                                             </div>
                                         </div>
@@ -55,7 +55,7 @@
                                             <label class="form-control-label">Upload Proof of Payment <span class="btn-inner--icon" data-toggle="tooltip" data-placement="right" title="Ulpoad Screenshot of your payment">
                                                     <i data-feather="alert-circle"></i></span>
                                             </label>
-                                            <input type="file" name="proof" id="proof" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <input type="file" name="proof" id="proof" required class="custom-input-file" data-multiple-caption="{count} files selected" />
                                             <label for="proof">
                                                 <i data-feather="upload"></i>
                                                 <span>Choose a file…</span>
