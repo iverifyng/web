@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+<?php
+require_once "../vendor/autoload.php";
+
+// Create the Transport
+$transport = (new Swift_SmtpTransport('server254.web-hosting.com', 465, 'ssl'))
+    ->setUsername('noreply@iverify.ng')
+    ->setPassword('Iverify2021!!')
+;
+
+// Create the Mailer using your created Transport
+$mailer = new Swift_Mailer($transport);
+
+function sendStartupEmail($userEmail, $firstName, $companyName)
+{
+    global $mailer;
+    $body = '<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -91,8 +106,8 @@
                             <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Step 3</b><br>Select your preferred service(s) on the dashboard.</p>
                             <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Step 4</b><br>Fill out the fields and upload documents.</p>
                             <hr>
-                            <p style="text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;">
-                                <b>Your search is on it's way to being processed.</b><br>For more enquiries please use the contact details below.
+                            <p style=\'text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;\'>
+                                <b>Your search is on it\'s way to being processed.</b><br>For more enquiries please use the contact details below.
                             </p>
                             </td>
                         </tr>
@@ -123,7 +138,7 @@
                                                 </tbody>
                                                 <tbody>
                                                 <tr>
-                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification.</td>
+                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ is redefining verification and background checks services through inclusion and automated process for enhanced digital economy..</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="" height="56" style="line-height:1px;font-size:1px">&nbsp;</td>
@@ -156,7 +171,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td style="font-family:\'Helvetica\',sans-serif;font-size:18px;font-weight:500;line-height:24px;letter-spacing:-0.2px;color:#ffffff" valign="top">
-                                                        Contact us.
+    Contact us.
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -185,7 +200,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;font-weight:500;line-height:24px" valign="top">
-                                                        <a href="mailto:support@iverify.ng" style="text-decoration:none;color:#f5a522" target="_blank">Send us an email</a>
+                                                        <a href="mailto:info@iverify.ng" style="text-decoration:none;color:#f5a522" target="_blank">Send us an email</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>
@@ -216,4 +231,20 @@
 </div>
 </div>
 </body>
-</html>
+</html>';
+
+    // Create a message
+    $message = (new Swift_Message('Get Started😇'))
+        ->setFrom(['noreply@iverify.ng' => 'iVerify™'])
+        ->setTo($userEmail)
+        ->setBody($body, 'text/html');
+
+    // Send the message
+    $result = $mailer->send($message);
+
+    if ($result > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}

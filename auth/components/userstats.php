@@ -17,7 +17,7 @@
                             <div class="col-4 text-center"><a href=# class="h5 font-weight-bolder text-warning mb-0">350</a> <span class="d-block text-sm">Following</span></div>
                             <div class="col-4 text-center"><a href=# class="h5 font-weight-bolder text-warning mb-0">1.5K</a> <span class="d-block text-sm">Followers</span></div>
                         </div>
-                        <div class=mb-5>
+                        <!--<div class=mb-5>
                             <div class="text-center mb-3"><span class="d-block h6 mb-1">Monthly Usage</span> <a href=# class="h6 text-muted text-sm">42/50 GB</a></div>
                             <div class=d-flex>
                                 <div class="progress-circle progress-lg mx-auto" id=progress-5 data-progress=72 data-trailwidth=4 data-text=72% data-textclass=h3 data-color=primary></div>
@@ -60,7 +60,7 @@
                                     <div class="col-auto text-right"><a href=# class="h6 text-sm">3 GB</a></div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="modal-footer py-3 mt-auto"><a href=logout class="btn btn-block btn-sm btn-neutral btn-icon rounded-pill"><span class=btn-inner--icon><i data-feather=log-out></i></span> <span class=btn-inner--text>Sign out</span></a></div>

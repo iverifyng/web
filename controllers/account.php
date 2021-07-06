@@ -1,6 +1,7 @@
 <?php
 //Connect email sending
-require_once "../auth/sendmail.php";
+require_once "../auth/emails/sendmail.php";
+require_once "../auth/emails/startupmail.php";
 
 session_start();
 
@@ -35,7 +36,8 @@ if (isset($_POST['signup_btn'])) {
   			        VALUES('$firstName', '$lastName', '$email', '$password', '$securityKey', '$accountType', '$companyName', '$token', 'Active')";
         mysqli_query($conn, $query);
         if (mysqli_affected_rows($conn) > 0) {
-            sendVerificationEmail($email, $token);
+            sendVerificationEmail($email, $token, $firstName, $companyName);
+            sendStartupEmail($email, $firstName, $companyName);
 
             $_SESSION['email'] = $email;
             $_SESSION['verified'] = false;

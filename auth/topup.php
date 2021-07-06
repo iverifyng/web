@@ -1,7 +1,6 @@
 <?php
 $page = 'Topup';
 include "./components/header.php";
-include "./components/userstats.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
@@ -68,16 +67,21 @@ require_once "../controllers/query.php";
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class=col-12>
-                                                    <form>
+                                                    <form id="topupForm">
                                                         <div class="form-row align-items-center">
                                                             <div class="col-7">
                                                                 <div class="form-group mb-0">
-                                                                    <div class="input-group input-group-merge"><input type=number class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount" value=1000>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <input class="form-control" type="hidden" id="email" value="<?php echo $_SESSION['email']; ?>" readonly>
+                                                                        <input class="form-control" type="hidden" id="name" value="<?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?>" readonly>
+                                                                        <input type=number id="amount" class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount">
                                                                         <div class=input-group-prepend><span class="input-group-text border-0"><i>₦</i></span></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-5"><button type=submit class="btn btn-block btn-primary">Save</button></div>
+                                                            <div class="col-5">
+                                                                <button type="submit" class="btn btn-block btn-primary">Topup</button>
+                                                            </div>
                                                         </div>
                                                     </form>
                                                 </div>
@@ -105,7 +109,7 @@ require_once "../controllers/query.php";
                                 </thead>
                                 <tbody>
                                 <?php
-                                $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";;
+                                $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";
                                 $result = mysqli_query($conn, $select_query);
                                 if (mysqli_num_rows($result) > 0) {
                                     // output data of each row

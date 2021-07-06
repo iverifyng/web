@@ -37,7 +37,7 @@
                 </div>
             </div>
                 <div class="order-lg-4 ml-lg-3">
-                    <a class="" href=#modal-profile role=button data-toggle=modal>
+                    <a class="" href=account>
                         <span class="avatar rounded-circle">
                         <img alt="Image placeholder" src=../assets/img/svg/icons/usericon.svg>
                         </span>

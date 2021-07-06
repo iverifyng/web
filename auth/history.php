@@ -16,7 +16,7 @@ require_once "../controllers/query.php";
                             <div class=mb-3>
                                 <div class="icon icon-shape icon-md bg-primary text-white"><i class="fas fa-wallet"></i></div>
                             </div>
-                            <h5 class="h3 font-weight-bolder mb-1">₦25,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span>
+                            <h5 class="h3 font-weight-bolder mb-1">₦0</h5><span class="d-block text-sm text-muted font-weight-bold">Wallet Balance</span>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ require_once "../controllers/query.php";
                             <div class=mb-3>
                                 <div class="icon icon-shape icon-md bg-danger text-white"><i class="fas fa-cash-register"></i></div>
                             </div>
-                            <h5 class="h3 font-weight-bolder mb-1">₦5,370.00</h5><span class="d-block text-sm text-muted font-weight-bold">Total Search(s)</span></div>
+                            <h5 class="h3 font-weight-bolder mb-1">0</h5><span class="d-block text-sm text-muted font-weight-bold">Total Search(s)</span></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 px-2">
@@ -67,14 +67,14 @@ require_once "../controllers/query.php";
                             </thead>
                             <tbody>
                             <?php
-                            $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";;
+                            $select_query = "SELECT * FROM corp_employee_search WHERE id='".$_SESSION['id']."'";
                             $result = mysqli_query($conn, $select_query);
                             if (mysqli_num_rows($result) > 0) {
                                 // output data of each row
                                 while($row = mysqli_fetch_assoc($result)) {
                                     $id = $row['id'];
                                     $userID = $row['userID'];
-                                    $transRef = $row['transRef'];
+                                    $searchRef = $row['searchRef'];
                                     $amount = $row['amount'];
                                     $sendersAccName = $row['sendersAccName'];
                                     $sendersBank  = $row['sendersBank'];
@@ -96,7 +96,7 @@ require_once "../controllers/query.php";
                                     }
 
                                     echo "<tr>";
-                                    echo "<td class=\"budget\">" .$transRef. "</td>";
+                                    echo "<td class=\"budget\">" .$searchRef. "</td>";
                                     echo "<td class=\"budget\">" ."₦".$amount. "</td>";
                                     echo "<td class=\"budget\">" .$paymentType. "</td>";
                                     echo "<td class=\"budget\">" .date("d(D) M Y", strtotime($dateDeposited)). "</td>";

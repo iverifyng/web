@@ -10,7 +10,7 @@ $transport = (new Swift_SmtpTransport('server254.web-hosting.com', 465, 'ssl'))
 // Create the Mailer using your created Transport
 $mailer = new Swift_Mailer($transport);
 
-function sendVerificationEmail($userEmail, $token)
+function sendVerificationEmail($userEmail, $token, $firstName, $companyName)
 {
     global $mailer;
     $body = '<!DOCTYPE html>
@@ -100,7 +100,7 @@ function sendVerificationEmail($userEmail, $token)
                                                 </tr>
                                                 <tr>
                                                     <td class=\'pdl-3x pdr-3x pdb-2x\'>
-                                                        <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Hello Chief,</b></p>
+                                                        <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center"><b>Hello '. $firstName .' '. $companyName .',</b></p>
                                                         <p class=\'mgb-1x\' style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;text-align:center">Thank you for joining <b>iVerify™</b><br>By clicking on the button or link below,<br>you will be verifying your email address.</p>
                                                         <p style="text-align:center;padding-bottom:25px;font-family:\'Helvetica\',Helvetica,Arial,sans-serif;font-size:14px;">
                                                         <a href="https://iverify.ng/auth/verify_email?token=' . $token . '" class=\'btn\' style="color: #ffffff; text-decoration: none;">Verify Account</a><br>
@@ -135,7 +135,7 @@ function sendVerificationEmail($userEmail, $token)
                                                                                             </tbody>
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ provides verification and screening solutions to the corporate and private sectors through a unified, standardized, ethical data verification.</td>
+                                                                                                    <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;line-height:20px;letter-spacing:-0.2px;color:#d8d8d8" valign="top">iVerify™ is redefining verification and background checks services through inclusion and automated process for enhanced digital economy.</td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="" height="56" style="line-height:1px;font-size:1px">&nbsp;</td>
@@ -197,7 +197,7 @@ function sendVerificationEmail($userEmail, $token)
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="font-family:\'Helvetica\',sans-serif;font-size:14px;font-weight:500;line-height:24px" valign="top">
-                                                                                                        <a href="mailto:support@iverify.ng" style="text-decoration:none;color:#f5a522" target="_blank">Send us an email</a>
+                                                                                                        <a href="mailto:info@iverify.ng" style="text-decoration:none;color:#f5a522" target="_blank">Send us an email</a>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -287,7 +287,7 @@ function sendVerificationEmail($userEmail, $token)
                 </html>';
 
     // Create a message
-    $message = (new Swift_Message('Welcome to the tribe👏'))
+    $message = (new Swift_Message('Welcome to the tribe👏 verify account'))
         ->setFrom(['noreply@iverify.ng' => 'iVerify™'])
         ->setTo($userEmail)
         ->setBody($body, 'text/html');

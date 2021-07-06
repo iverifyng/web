@@ -44,24 +44,11 @@ include "verification-modal.php"
         <script src=../assets/libs/progressbar.js/dist/progressbar.min.js></script>
         <script src=../assets/js/main.js></script>
         <script src=../assets/js/app.js></script>
-        <script src="https://api.flutterwave.com/v3/payments"></script>
+        <script src=../assets/js/pay.js></script>
+        <script src="https://checkout.flutterwave.com/v3.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-        <script>
-            $(function() {
-                // Datatables basic
-                $('#datatables-basic').DataTable({
-                    responsive: true
-                });
-                // Datatables with Buttons
-                var datatablesButtons = $('#datatables-buttons').DataTable({
-                    lengthChange: !1,
-                    buttons: ["copy", "print"],
-                    responsive: true
-                });
-                datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
-            });
-        </script>
+
         <script>
             feather.replace({
                 width: "1em",

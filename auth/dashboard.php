@@ -1,11 +1,10 @@
 <?php
 $page = 'Dashboard';
+include "../config/db.php";
 include "./components/header.php";
-include "./components/userstats.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
-
 
 ?>
 

@@ -149,17 +149,24 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Amount</label>
+                                            <input class="form-control" type="text" name="amount" value="8500" readonly>
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Employee First Name</label>
-                                            <input class="form-control" type="text" name="employee_firstName" placeholder="First name">
+                                            <input class="form-control" required type="text" name="employee_firstName" placeholder="First name">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Employee Last Name</label>
-                                            <input class="form-control" type="text" name="employee_lastName" placeholder="Last name">
+                                            <input class="form-control" required type="text" name="employee_lastName" placeholder="Last name">
                                         </div>
                                     </div>
 
