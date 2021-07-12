@@ -11,9 +11,9 @@
                 </div>
                 <div class=mt-4>
                     <ul class="nav nav-tabs overflow-x">
-                        <li class=nav-item><a href="./s" class="nav-link active">Profile</a></li>
-                        <li class=nav-item><a href=security class=nav-link>Security</a></li>
-                        <li class=nav-item><a href=notifications.html class=nav-link>Notifications</a></li>
+                        <li class=nav-item><a href="account" class="nav-link <?php if($page1=='Profile'){echo 'active';}?>">Profile</a></li>
+                        <li class=nav-item><a href=security class="nav-link <?php if($page1=='Security'){echo 'active';}?>">Security</a></li>
+                        <li class=nav-item><a href=# class=nav-link>Notifications</a></li>
                     </ul>
                 </div>
             </div>

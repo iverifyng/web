@@ -1,5 +1,6 @@
 <?php
 $page = 'Account';
+$page1 = 'Profile';
 include "./components/header.php";
 include "./components/userstats.php";
 include "./components/navbar.php";
