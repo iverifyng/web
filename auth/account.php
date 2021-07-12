@@ -17,6 +17,10 @@ include "./components/navbar.php";
                 $securityKey = $row['securityKey'];
                 $firstName = $row['firstName'];
                 $lastName = $row['lastName'];
+                $email = $row['email'];
+                $companyName = $row['companyName'];
+                $phone = $row['phone'];
+                $accountType = $row['accountType']
         ?>
     <div class="slice slice-sm">
         <div class=container>
@@ -48,34 +52,72 @@ include "./components/navbar.php";
                                         <div class=col-md-6>
                                             <div class=form-group>
                                                 <label class=form-control-label>Contact Person First Name</label>
-                                                <input class=form-control type=text placeholder="Enter your first name" value="<? echo $firstName; ?>" readonly>
+                                                <input class=form-control type=text placeholder="Enter your first name" name="firstName" value="<? echo $firstName; ?>">
                                             </div>
                                         </div>
                                         <div class=col-md-6>
                                             <div class=form-group><label class=form-control-label>Contact Person Last Name</label>
-                                                <input class=form-control type=text placeholder="Also your last name" value="<? echo $lastName; ?>" readonly>
+                                                <input class=form-control type=text placeholder="Also your last name" name="lastName" value="<? echo $lastName; ?>">
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center">
-                                        <div class=col-md-6>
-                                            <div class=form-group><label class=form-control-label>Birthday</label> <input type=text class=form-control data-toggle=date placeholder="Select your birth date"></div>
-                                        </div>
-                                        <div class=col-md-6>
-                                            <div class=form-group><label class=form-control-label>Gender</label> <select class=custom-select><option disabled=disabled selected=selected>Select option</option><option value=1>Female</option><option value=2>Male</option><option value=2>Rather not say</option></select></div>
                                         </div>
                                     </div>
                                     <div class=row>
                                         <div class=col-md-6>
-                                            <div class=form-group><label class=form-control-label>Email</label> <input class=form-control type=email placeholder=name@exmaple.com> <small class="form-text text-muted mt-2">This is the main email address that we'll send notifications.</small></div>
+                                            <div class=form-group><label class=form-control-label>Email</label>
+                                                <input class=form-control type=email placeholder=name@exmaple.com value="<? echo $email; ?>" readonly>
+                                                <small class="form-text text-muted mt-2">This is the main email address that we'll send notifications.</small>
+                                            </div>
                                         </div>
                                         <div class=col-md-6>
-                                            <div class=form-group><label class=form-control-label>Phone</label> <input class=form-control type=text placeholder="+40-777 245 549"></div>
+                                            <div class=form-group><label class=form-control-label>Phone</label>
+                                                <input class=form-control type=text name="phone" placeholder="+234 812 345 6789"></div>
                                         </div>
                                     </div>
-                                    <div class=mt-3><button type=button class="btn btn-sm btn-primary">Save</button></div>
+                                    <div class="row">
+                                        <div class="mt-3 col-md-8">
+                                            <button type=submit name="general_info_btn" class="btn btn-dark">Update</button>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
+
+                            <!--<hr>
+
+                            <div <? echo $corporateAcc; ?>
+                                <h5 class=mb-3>Company information</h5>
+                                <form>
+                                    <div class=row>
+                                        <div class=col-md-6>
+                                            <div class=form-group>
+                                                <label class=form-control-label>Contact Person First Name</label>
+                                                <input class=form-control type=text placeholder="Enter your first name" name="firstName" value="<? echo $firstName; ?>">
+                                            </div>
+                                        </div>
+                                        <div class=col-md-6>
+                                            <div class=form-group><label class=form-control-label>Contact Person Last Name</label>
+                                                <input class=form-control type=text placeholder="Also your last name" name="lastName" value="<? echo $lastName; ?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=row>
+                                        <div class=col-md-6>
+                                            <div class=form-group><label class=form-control-label>Email</label>
+                                                <input class=form-control type=email placeholder=name@exmaple.com value="<? echo $email; ?>" readonly>
+                                                <small class="form-text text-muted mt-2">This is the main email address that we'll send notifications.</small>
+                                            </div>
+                                        </div>
+                                        <div class=col-md-6>
+                                            <div class=form-group><label class=form-control-label>Phone</label>
+                                                <input class=form-control type=text name="phone" placeholder="+234 812 345 6789"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mt-3 col-md-8">
+                                            <button type=submit name="general_info_btn" class="btn btn-dark">Update</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>-->
                             <hr>
                             <div>
                                 <div class="page-inner-header mb-4">
@@ -83,7 +125,8 @@ include "./components/navbar.php";
                                     <p class="text-muted mb-0">Once you delete your account, there is no going back. Please be certain.</p>
                                 </div>
                                 <div class=row>
-                                    <div class=col-md-8><button type=button class="btn btn-danger" data-toggle=modal data-target=#modal_account_deactivate>Delete your account</button></div>
+                                    <div class=col-md-8>
+                                        <button type=button class="btn btn-danger" data-toggle=modal data-target=#modal_account_deactivate>Delete your account</button></div>
                                 </div>
                                 <div class="modal fade" id=modal_account_deactivate tabindex=-1 role=dialog aria-labelledby=modal_account_deactivate aria-hidden=true>
                                     <div class="modal-dialog modal-dialog-centered" role=document>
@@ -95,7 +138,10 @@ include "./components/navbar.php";
                                                     <p>We will immediately delete all of your personal data from our database. This action can not be undone. Are you sure you want to do this?</p>
                                                 </div>
                                             </div>
-                                            <div class=modal-footer><button type=button class="btn btn-sm btn-link text-danger btn-zoom--hover font-weight-600">Delete</button> <button type=button class="btn btn-sm btn-secondary" data-dismiss=modal>Cancel</button></div>
+                                            <div class=modal-footer>
+                                                <a href="logout" class="btn btn-sm btn-link text-danger btn-zoom--hover font-weight-600">Delete</a>
+                                                <button type=button class="btn btn-sm btn-secondary" data-dismiss=modal>Cancel</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

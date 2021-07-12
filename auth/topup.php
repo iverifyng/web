@@ -4,6 +4,7 @@ include "./components/header.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
+require_once "../controllers/pay.php";
 ?>
 
     <section class="bg-section-secondary pb-5">
@@ -67,20 +68,20 @@ require_once "../controllers/query.php";
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class=col-12>
-                                                    <form id="topupForm">
+                                                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                                                         <div class="form-row align-items-center">
                                                             <div class="col-7">
                                                                 <div class="form-group mb-0">
                                                                     <div class="input-group input-group-merge">
-                                                                        <input class="form-control" type="hidden" id="email" value="<?php echo $_SESSION['email']; ?>" readonly>
-                                                                        <input class="form-control" type="hidden" id="name" value="<?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?>" readonly>
-                                                                        <input type=number id="amount" class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount">
+                                                                        <input class="form-control" type="hidden" name="email" value="<?php echo $_SESSION['email']; ?>" readonly>
+                                                                        <input class="form-control" type="hidden" name="name" value="<?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?>" readonly>
+                                                                        <input type=number name="amount" class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount">
                                                                         <div class=input-group-prepend><span class="input-group-text border-0"><i>₦</i></span></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-5">
-                                                                <button type="submit" class="btn btn-block btn-primary">Topup</button>
+                                                                <button type="submit" name="pay" class="btn btn-block btn-primary">Topup</button>
                                                             </div>
                                                         </div>
                                                     </form>

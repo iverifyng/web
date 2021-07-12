@@ -44,7 +44,6 @@ include "verification-modal.php"
         <script src=../assets/libs/progressbar.js/dist/progressbar.min.js></script>
         <script src=../assets/js/main.js></script>
         <script src=../assets/js/app.js></script>
-        <script src=../assets/js/pay.js></script>
         <script src="https://checkout.flutterwave.com/v3.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>

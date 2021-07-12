@@ -208,6 +208,117 @@
 </div>
 
 
+<!-- Guarantor Details -->
+<div class="modal modal-fluid fade" id="guarantorVerification" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 pb-4 text-center">
+                        <div class="">
+                            <img src="../assets/img/svg/guarantor.svg" class="img-fluid img-center pb-2" style=width:100px;height:100px>
+                            <span class="badge badge-soft-primary">
+                                Amount: ₦5,000.00
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col align-items-center">
+                        <div class=col-md-12>
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">User ID</label>
+                                            <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Amount</label>
+                                            <input class="form-control" type="text" name="amount" value="5000" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantor First Name</label>
+                                            <input class="form-control" required type="text" name="employee_firstName" placeholder="First name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantor Last Name</label>
+                                            <input class="form-control" required type="text" name="guarantor_lastName" placeholder="Last name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantor Phone Number</label>
+                                            <input class="form-control" required type="text" name="guarantor_phoneNum" placeholder="0810 234 5678">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantor Residential Address</label>
+                                            <input class="form-control" required type="text" name="guarantor_residential_address" placeholder="House Address">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantor Work Address</label>
+                                            <textarea class="form-control" placeholder="Office Address" name="guarantor_work_address" resize="none" rows="3"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Upload Means of Identification <span class="btn-inner--icon text-danger" data-toggle="tooltip" data-placement="right" title="NIN, Drivers License, Voters Card, International Passport">
+                                                    <i data-feather="alert-circle"></i></span>
+                                            </label>
+                                            <input type="file" name="meansOfID" id="ID" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="ID">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Upload Employee CV (PDF Format)</label>
+                                            <input type="file" name="curriculumVitae" id="CV" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="CV">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pb-2 pt-2">
+                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark">Upload Guarantor Data</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Domestic Employee Unlimited Details -->
 <div class="modal modal-fluid fade" id="domesticEmployee" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
