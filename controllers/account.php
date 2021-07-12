@@ -94,7 +94,7 @@ if (isset($_POST['user_login_btn'])) {
         $_SESSION['wallet'] = $wallet;
         $_SESSION['accountType'] = $accountType;
         $_SESSION['securityKey'] = $securityKey;
-        $_SESSION['companyName'] = $securityKey;
+        $_SESSION['companyName'] = $companyName;
         $_SESSION['id'] = $id;
         if ($status == 'Inactive'){
             $_SESSION['message_title'] = "Account Inactive";
