@@ -65,6 +65,7 @@ if (isset($_POST['user_login_btn'])) {
     $verified = $conn->real_escape_string($_POST['verified']);
     $accountType = $conn->real_escape_string($_POST['accountType']);
     $securityKey = $conn->real_escape_string($_POST['securityKey']);
+    $companyName = $conn->real_escape_string($_POST['companyName']);
 
     $password = sha1($password);
     $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
@@ -81,6 +82,7 @@ if (isset($_POST['user_login_btn'])) {
         $wallet = $row['wallet'];
         $accountType = $row['accountType'];
         $securityKey = $row['securityKey'];
+        $companyName = $row['companyName'];
 
     }if (mysqli_num_rows($result) == 1) {
         $_SESSION['firstName'] = $firstName;
@@ -92,6 +94,7 @@ if (isset($_POST['user_login_btn'])) {
         $_SESSION['wallet'] = $wallet;
         $_SESSION['accountType'] = $accountType;
         $_SESSION['securityKey'] = $securityKey;
+        $_SESSION['companyName'] = $securityKey;
         $_SESSION['id'] = $id;
         if ($status == 'Inactive'){
             $_SESSION['message_title'] = "Account Inactive";
