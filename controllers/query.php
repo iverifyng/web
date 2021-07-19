@@ -103,7 +103,32 @@ if (isset($_POST['domestic_employee_btn'])) {
         if (mysqli_num_rows($result) > 0) {
 
             while ($row = mysqli_fetch_assoc($result)) {
-                if($row["wallet"] && $row["wallet"] >= $amount) {
+                if($row["badge"] && $row["badge"] == "Veteran") {
+
+                    $query = "INSERT INTO corp_employee_search (userID, employee_firstName, employee_lastName, meansOfID, curriculumVitae, amount, searchRef, status)"
+                        . "VALUES ('$userID', '$employee_firstName', '$employee_lastName', '$meansOfID_path', '$curriculumVitae_path', '$amount', '$searchRef', 'Pending')";
+
+                    mysqli_query($conn, $query);
+                    if (mysqli_affected_rows($conn) > 0) {
+
+                        //copy image to upload folder
+                        copy($_FILES['meansOfID']['tmp_name'], $meansOfID_path);
+                        copy($_FILES['curriculumVitae']['tmp_name'], $curriculumVitae_path);
+
+                        //update user wallet
+                        $update = "UPDATE users SET wallet=$walletNewAmount WHERE id ='".$_SESSION['id']."'";
+                        mysqli_query($conn, $update);
+
+                        $_SESSION['success_message_title'] = "Data uploaded";
+                        $_SESSION['success_message'] = "Corporate employee search request sent 👍";
+                    }
+                    else {
+                        $error=$conn->error;
+                        $_SESSION['message_title'] = "Error Occurred";
+                        $_SESSION['message'] = $error;
+                    }
+
+                }else if ($row["wallet"] && $row["wallet"] >= $amount) {
 
                     $walletNewAmount = floor($row["wallet"] - $amount);
 

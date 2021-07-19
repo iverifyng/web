@@ -17,6 +17,7 @@ if (isset($_POST['signup_btn'])) {
     $password = $conn->real_escape_string($_POST['password']);
     $accountType = $conn->real_escape_string($_POST['accountType']);
     $companyName = $conn->real_escape_string($_POST['companyName']);
+    $badge = $conn->real_escape_string($_POST['badge']);
     $securityKey = 'ISC'.rand(1000, 9999);
     $token = bin2hex(random_bytes(50)); // generate unique token
 
@@ -32,8 +33,8 @@ if (isset($_POST['signup_btn'])) {
     }else {
         // Finally, register agent if there are no errors in the form
         $password = sha1($password);//encrypt the password before saving in the database
-        $query = "INSERT INTO users (firstName, lastName, email, password, securityKey, accountType, companyName, token, status) 
-  			        VALUES('$firstName', '$lastName', '$email', '$password', '$securityKey', '$accountType', '$companyName', '$token', 'Active')";
+        $query = "INSERT INTO users (firstName, lastName, email, password, securityKey, accountType, companyName, badge, token, status) 
+  			        VALUES('$firstName', '$lastName', '$email', '$password', '$securityKey', '$accountType', '$companyName', 'Expert', '$token', 'Active')";
         mysqli_query($conn, $query);
         if (mysqli_affected_rows($conn) > 0) {
             sendVerificationEmail($email, $token, $firstName, $companyName);
