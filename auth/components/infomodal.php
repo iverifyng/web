@@ -90,8 +90,7 @@
                             <h5>Certificate Verification</h5>
                         </div>
                         <p class="lead text-muted pt-0">
-                            Validation of Certificate<span class="text-sm text-info">(NYSC/School Certificate)</span><br>
-                            Statutory Fees <span class="text-sm text-danger">Excluded</span>
+                            Validation of Certificate<br><span class="text-sm text-info">(NYSC/School Certificate)</span><br>
                         </p>
                         <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Let's do this!</button>
                         <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>

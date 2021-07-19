@@ -114,7 +114,7 @@ if (isset($_POST['domestic_employee_btn'])) {
                     if (mysqli_affected_rows($conn) > 0) {
 
                         //copy image to upload folder
-                        copy($_FILES['meansOfID']['tmp_name'], $meansOfID_path);
+                       copy($_FILES['meansOfID']['tmp_name'], $meansOfID_path);
                         copy($_FILES['curriculumVitae']['tmp_name'], $curriculumVitae_path);
 
                         //update user wallet

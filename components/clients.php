@@ -20,6 +20,7 @@
                     <div class="client col-lg-2 col-md-3 col-4 py-3"><img alt="Image placeholder" src=./assets/img/clients/png/tarius.png></div>
                     <div class="client col-lg-2 col-md-3 col-4 py-3"><img alt="Image placeholder" src=./assets/img/clients/png/candi.png></div>
                     <div class="client col-lg-2 col-md-3 col-4 py-3"><img alt="Image placeholder" src=./assets/img/clients/png/epicure.png></div>
+                    <div class="client col-lg-2 col-md-3 col-4 py-3"><img alt="Image placeholder" src=./assets/img/clients/png/FirstCentral.png></div>
                 </div>
             </div>
         </div>

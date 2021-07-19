@@ -36,7 +36,7 @@ require_once "../controllers/query.php";
                                         </div>
                                         <div class=text-right>
                                             <a href="identity-verification" class="btn btn-xs btn-neutral btn-icon">
-                                                <span class=btn-inner--icon><i data-feather=plus></i></span> 
+                                                <span class=btn-inner--icon><i data-feather=plus></i></span>
                                                 <span class="btn-inner--text ml-1">View All</span>
                                             </a>
                                         </div>
@@ -88,7 +88,7 @@ require_once "../controllers/query.php";
                                         <div><span class=h6></span></div>
                                         <div class=text-right>
                                             <div class="actions d-flex mr-n2">
-                                                ₦25,000
+                                                ₦30,000
                                                 <button type=button class="text-danger action-item" data-toggle="modal" data-target="#certificateModal" data-toggle="tooltip" data-placement="top" title="Features">
                                                     <i data-feather=alert-circle></i>
                                                 </button>
@@ -104,7 +104,10 @@ require_once "../controllers/query.php";
                                             </div>
                                         </div>
                                         <div class=text-right>
-                                            <button type=button class="btn btn-xs btn-neutral btn-icon"><span class=btn-inner--icon><i data-feather=plus></i></span> <span class="btn-inner--text ml-1">Verify</span></button>
+                                            <a href="certificate-verification" class="btn btn-xs btn-neutral btn-icon">
+                                                <span class=btn-inner--icon><i data-feather=plus></i></span>
+                                                <span class="btn-inner--text ml-1">Verify</span>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class=mt-3>
