@@ -67,7 +67,7 @@ require_once "../controllers/query.php";
                             </thead>
                             <tbody>
                             <?php
-                            $select_query = "SELECT * FROM corp_employee_search WHERE id='".$_SESSION['id']."'";
+                            $select_query = "SELECT * FROM corp_employee_search WHERE userID='$userID'";
                             $result = mysqli_query($conn, $select_query);
                             if (mysqli_num_rows($result) > 0) {
                                 // output data of each row

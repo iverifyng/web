@@ -59,7 +59,6 @@ if (isset($_POST['domestic_employee_btn'])) {
     $status = $conn->real_escape_string($_POST['status']);
     $id = $conn->real_escape_string($_POST['id']);
     $userID = $conn->real_escape_string($_POST['userID']);
-    $amount = $conn->real_escape_string($_POST['amount']);
     $employee_firstName = $conn->real_escape_string($_POST['employee_firstName']);
     $employee_lastName = $conn->real_escape_string($_POST['employee_lastName']);
     $meansOfID_path  = $conn->real_escape_string('../upload/'.$_FILES['meansOfID']['name']);
@@ -105,8 +104,8 @@ if (isset($_POST['domestic_employee_btn'])) {
             while ($row = mysqli_fetch_assoc($result)) {
                 if($row["badge"] && $row["badge"] == "Veteran") {
 
-                    $query = "INSERT INTO corp_employee_search (userID, employee_firstName, employee_lastName, meansOfID, curriculumVitae, amount, searchRef, status)"
-                        . "VALUES ('$userID', '$employee_firstName', '$employee_lastName', '$meansOfID_path', '$curriculumVitae_path', '$amount', '$searchRef', 'Pending')";
+                    $query = "INSERT INTO corp_employee_search (userID, employee_firstName, employee_lastName, meansOfID, curriculumVitae, searchRef, status)"
+                        . "VALUES ('$userID', '$employee_firstName', '$employee_lastName', '$meansOfID_path', '$curriculumVitae_path', '$searchRef', 'Pending')";
 
                     mysqli_query($conn, $query);
                     if (mysqli_affected_rows($conn) > 0) {

@@ -3,7 +3,6 @@ $page = 'Topup';
 include "./components/header.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
-require_once "../controllers/query.php";
 require_once "../controllers/pay.php";
 ?>
 
@@ -110,7 +109,7 @@ require_once "../controllers/pay.php";
                                 </thead>
                                 <tbody>
                                 <?php
-                                $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";
+                                $select_query = "SELECT * FROM wallet_topup WHERE userID='$userID'";
                                 $result = mysqli_query($conn, $select_query);
                                 if (mysqli_num_rows($result) > 0) {
                                     // output data of each row
@@ -137,7 +136,7 @@ require_once "../controllers/pay.php";
                                             default:
                                                 $class  = '';
                                         }
-
+                                        echo $userID;
                                         echo "<tr>";
                                         echo "<td class=\"budget\">" .$transRef. "</td>";
                                         echo "<td class=\"budget\">" ."₦".$amount. "</td>";
