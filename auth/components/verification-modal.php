@@ -196,7 +196,9 @@
 
                                 </div>
                                 <div class="pb-2 pt-2">
-                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark">Upload Employee Data</button>
+                                    <button type=submit name="corporate_employee_btn" onclick="this.classList.toggle('button--loading')" class="btn btn-block btn-dark">
+                                        <span class="button__text">Upload Employee Data</span>
+                                    </button>
                                 </div>
                             </form>
                         </div>

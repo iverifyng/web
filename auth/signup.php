@@ -173,7 +173,9 @@ $_SESSION['notify'];
                                         </div>
                                     </div>
                                     <div class=mt-4>
-                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit">Create my account</button>
+                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')">
+                                            <span class="button__text">Create my account</span>
+                                        </button>
                                     </div>
                                 </form>
                                 <!-- Corporate form-->
@@ -223,7 +225,9 @@ $_SESSION['notify'];
                                         </div>
                                     </div>
                                     <div class=mt-4>
-                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit">Create my account</button>
+                                        <button class="btn btn-block btn-dark" name="signup_btn" type="submit" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')">
+                                            <span class="button__text">Create my account</span>
+                                        </button>
                                     </div>
                                 </form>
                                 <div class=mt-4><small>Already have an account?</small> <a href=login class="small font-weight-bold">Sign in</a></div>
@@ -242,6 +246,7 @@ $_SESSION['notify'];
     <script src=../assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
     <script src=../assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
     <script src=../assets/js/main.js></script>
+    <script src="../assets/js/app.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <?php
     if (isset($_SESSION['message']))

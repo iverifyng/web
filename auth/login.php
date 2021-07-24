@@ -131,7 +131,7 @@ require_once "../controllers/account.php";
                                             <input type=password class=form-control id=input-password name="password" placeholder=Password>
                                         </div>
                                     </div>
-                                    <div class=mt-4><button type=submit name="user_login_btn" class="btn btn-block btn-dark">Sign in</button></div>
+                                    <div class=mt-4><button type=submit name="user_login_btn" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')"><span class="button__text">Sign in</span></button></div>
                                 </form>
                                 <div class=mt-4><small>Not registered?</small> <a href=signup class="small font-weight-bold">Create account</a></div>
                             </div>

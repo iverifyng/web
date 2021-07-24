@@ -68,3 +68,14 @@ $(function() {
     });
     datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
 });
+
+
+//Submit button loading
+$('.btn').on('click', function() {
+    var $this = $(this);
+    $this.button('loading');
+    setTimeout(function() {
+        $this.button('reset');
+    }, 8000);
+});
+
