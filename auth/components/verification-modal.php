@@ -345,10 +345,17 @@
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
                                 <h6>Personal Data</h6>
                                 <div class="row align-items-center">
-                                    <div class="col-md-6" style="display: none">
+                                    <div class="col-md-6" style="display: non">
                                         <div class="form-group">
                                             <label class="form-control-label">User ID</label>
                                             <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6" style="display: non">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Amount</label>
+                                            <input class="form-control" type="text" name="userID" value="8500" readonly>
                                         </div>
                                     </div>
 
@@ -368,13 +375,6 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Other Names</label>
-                                            <input class="form-control" type="text" placeholder="Other names">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
                                             <label class="form-control-label">Date of Birth</label>
                                             <input type="date" class="form-control" data-toggle="date" placeholder="Select your birth date">
                                         </div>
@@ -382,26 +382,20 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Gender</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select option</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Male">Male</option>
-                                            </select>
+                                            <label class="form-control-label">Next of Kin</label>
+                                            <input class="form-control" type="text" placeholder="Full Name of Next of Kin">
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="form-control-label">Religion</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select option</option>
-                                                <option value="Christian">Christian</option>
-                                                <option value="Muslim">Muslim</option>
-                                                <option value="Others">Others</option>
-                                            </select>
+                                            <label class="form-control-label">Directions to Residence</label>
+                                            <textarea class="form-control" placeholder="Directions to Residential Address" rows="3"></textarea>
                                         </div>
                                     </div>
+                                </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -418,30 +412,8 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Educational Qualification</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select option</option>
-                                                <option value="Senior Secondary Certificate Examination (SSCE)">Senior Secondary Certificate Examination (SSCE)</option>
-                                                <option value="Ordinary National Diploma (OND)">Ordinary National Diploma (OND)</option>
-                                                <option value="Higher National Diploma (HND)">Higher National Diploma (HND)</option>
-                                                <option value="Bachelor Degree (BD)">Bachelor Degree (BD)</option>
-                                                <option value="Masters Degree (MD)">Masters Degree (MD)</option>
-                                                <option value="PhD">PhD</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
                                             <label class="form-control-label">Phone Number</label>
                                             <input class="form-control" type="tel" placeholder="0801 234 5678">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Next of Kin</label>
-                                            <input class="form-control" type="text" placeholder="Full Name of Next of Kin">
                                         </div>
                                     </div>
 
@@ -452,19 +424,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Strength</label>
-                                            <input class="form-control" type="text" placeholder="What motivates you?">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Weakness</label>
-                                            <input class="form-control" type="text" placeholder="What affects your performance?">
-                                        </div>
-                                    </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -641,174 +600,10 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Local Dialect</label>
-                                            <input class="form-control" type="text" placeholder="Local Language">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Account Name</label>
-                                            <input class="form-control" type="text" placeholder="Kelechi Kayode Aminu">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Account Number</label>
-                                            <input class="form-control" type="text" placeholder="1234567890">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Bank Name</label>
-                                            <input class="form-control" type="text" placeholder="Zenith Bank">
-                                        </div>
-                                    </div>
-
                                 </div>
 
-                                <div class="row align-items-center">
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Clan Meeting</label>
-                                            <textarea class="form-control" placeholder="Meeting Days, Time and Venue" rows="2"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <h6>Family Details</h6>
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Spouse Name (If Married)</label>
-                                            <input class="form-control" type="text" placeholder="Spouse Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Spouse Occupation</label>
-                                            <textarea class="form-control" placeholder="Spouse Occupation/Place of Work/Address and Phone Number" rows="1"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Children (If Any)</label>
-                                            <textarea class="form-control" placeholder="Children Name and Age" rows="1"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Fathers Name and Occupation</label>
-                                            <input class="form-control" type="text" placeholder="Fathers Name and Occupation">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Mothers Name and Occupation</label>
-                                            <input class="form-control" type="text" placeholder="Mothers Name and Occupation">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">No of Siblings/No in Family</label>
-                                            <input class="form-control" type="text" placeholder="No of Siblings/No in Family">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Siblings Names and Address</label>
-                                            <textarea class="form-control" placeholder="Siblings Names and Address" rows="3"></textarea>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <h6>Work History 1</h6>
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Company/Employer Name</label>
-                                            <input class="form-control" type="text" placeholder="Company/Employer Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Contact number</label>
-                                            <input class="form-control" type="text" placeholder="Contact Number">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Address and Direction</label>
-                                            <textarea class="form-control" placeholder="Address and Direction" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Reason for Leaving</label>
-                                            <textarea class="form-control" placeholder="Reason for Leaving" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <h6>Work History 2</h6>
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Company/Employer Name</label>
-                                            <input class="form-control" type="text" placeholder="Company/Employer Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Contact number</label>
-                                            <input class="form-control" type="text" placeholder="Contact Number">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Address and Direction</label>
-                                            <textarea class="form-control" placeholder="Address and Direction" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Reason for Leaving</label>
-                                            <textarea class="form-control" placeholder="Reason for Leaving" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                </div>
                                 <div class="pb-2 pt-2">
-                                    <button type=submit name="corporate_employee_btn" class="btn btn-block btn-dark">Upload Employee Data</button>
+                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark">Upload Employee Data</button>
                                 </div>
                             </form>
                         </div>

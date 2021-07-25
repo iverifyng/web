@@ -16,7 +16,7 @@
                         $id = $row['id'];
                         $wallet = $row['wallet'];
                         ?>
-                        <i class="fas fa-wallet"></i>&#160;Wallet Balance:</span> ₦<?php echo  $wallet; ?>
+                        <i class="fas fa-wallet"></i>&#160;Wallet Balance:</span> ₦<?php echo number_format($wallet, 2, '.', ','); ?>
                     <?php }
                     }
                         ?>
