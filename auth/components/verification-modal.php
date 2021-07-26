@@ -343,47 +343,46 @@
                     <div class="col align-items-center">
                         <div class=col-md-12>
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
-                                <h6>Personal Data</h6>
-                                <div class="row align-items-center">
-                                    <div class="col-md-6" style="display: non">
+                                <div class="row align-items-center pt-2">
+                                    <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">User ID</label>
                                             <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6" style="display: non">
+                                    <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">Amount</label>
-                                            <input class="form-control" type="text" name="userID" value="8500" readonly>
+                                            <input class="form-control" type="text" name="amount" value="8500" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Employee First Name</label>
-                                            <input class="form-control" type="text" placeholder="First name">
+                                            <input class="form-control" type="text" name="employee_firstName" placeholder="First name">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Employee Last Name</label>
-                                            <input class="form-control" type="text" placeholder="Last name">
+                                            <input class="form-control" type="text" name="employee_lastName" placeholder="Last name">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Date of Birth</label>
-                                            <input type="date" class="form-control" data-toggle="date" placeholder="Select your birth date">
+                                            <input type="date" class="form-control" name="date_of_birth" data-toggle="date" placeholder="Select your birth date">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Next of Kin</label>
-                                            <input class="form-control" type="text" placeholder="Full Name of Next of Kin">
+                                            <input class="form-control" type="text" name="nok_fullName" placeholder="Full Name of Next of Kin">
                                         </div>
                                     </div>
                                 </div>
@@ -391,47 +390,55 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="form-control-label">Directions to Residence</label>
-                                            <textarea class="form-control" placeholder="Directions to Residential Address" rows="3"></textarea>
+                                            <label class="form-control-label">Home/work address of Next of Kin</label>
+                                            <textarea class="form-control" name="nok_address" placeholder="Home/work address of Next of Kin Address" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="row align-items-center">
+
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Marital Status</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select option</option>
-                                                <option value="Single">Single</option>
-                                                <option value="Married">Married</option>
-                                                <option value="Divorced">Divorced</option>
-                                                <option value="Separated">Separated</option>
-                                            </select>
+                                            <label class="form-control-label">Relationship with Next of Kin</label>
+                                            <input class="form-control" type="text" name="relationship_with_nok" placeholder="What is your connection with Next of Kin">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Phone Number</label>
-                                            <input class="form-control" type="tel" placeholder="0801 234 5678">
+                                            <label class="form-control-label">Guarantor</label>
+                                            <input class="form-control" type="text" name="guarantor_fullName" placeholder="Full Name of Guarantor">
                                         </div>
                                     </div>
+
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Guarantors residential and work address/phone no</label>
+                                            <textarea class="form-control" name="guarantor_address" placeholder="Guarantors residential and work address/phone no" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Emergency Contact</label>
-                                            <input class="form-control" type="tel" placeholder="Who to call in the case of emergency">
+                                            <label class="form-control-label">Relationship with Guarantor.</label>
+                                            <input class="form-control" type="text" name="relationship_with_guarantor" placeholder="What is your connection with Guarantor.">
                                         </div>
                                     </div>
-
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Upload Means of Identification <span class="btn-inner--icon" data-toggle="tooltip" data-placement="top" title="NIN, Drivers License, Voters Card, International Passport">
                                                     <i data-feather="alert-circle"></i></span>
                                             </label>
-                                            <input type="file" name="file-1[]" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" />
-                                            <label for="file-1">
+                                            <input type="file" name="meansOfID" id="IDentity" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="IDentity">
                                                 <i data-feather="upload"></i>
                                                 <span>Choose a file…</span>
                                             </label>
@@ -440,170 +447,41 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">State Of Origin</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select State Of Origin</option>
-                                                <option value="Abia">Abia</option>
-                                                <option value="Adamawa">Adamawa</option>
-                                                <option value="Akwa Ibom">Akwa Ibom</option>
-                                                <option value="Anambra">Anambra</option>
-                                                <option value="Bauchi">Bauchi</option>
-                                                <option value="Bayelsa">Bayelsa</option>
-                                                <option value="Benue">Benue</option>
-                                                <option value="Borno">Borno</option>
-                                                <option value="Cross River">Cross River</option>
-                                                <option value="Delta">Delta</option>
-                                                <option value="Ebonyi">Ebonyi</option>
-                                                <option value="Edo">Edo</option>
-                                                <option value="Ekiti">Ekiti</option>
-                                                <option value="Enugu">Enugu</option>
-                                                <option value="Abuja">FCT - Abuja</option>
-                                                <option value="Gombe">Gombe</option>
-                                                <option value="Imo">Imo</option>
-                                                <option value="Jigawa">Jigawa</option>
-                                                <option value="Kaduna">Kaduna</option>
-                                                <option value="Kano">Kano</option>
-                                                <option value="Katsina">Katsina</option>
-                                                <option value="Kebbi">Kebbi</option>
-                                                <option value="Kogi">Kogi</option>
-                                                <option value="Kwara">Kwara</option>
-                                                <option value="Lagos">Lagos</option>
-                                                <option value="Nasarawa">Nasarawa</option>
-                                                <option value="Niger">Niger</option>
-                                                <option value="Ogun">Ogun</option>
-                                                <option value="Ondo">Ondo</option>
-                                                <option value="Osun">Osun</option>
-                                                <option value="Oyo">Oyo</option>
-                                                <option value="Plateau">Plateau</option>
-                                                <option value="Rivers">Rivers</option>
-                                                <option value="Sokoto">Sokoto</option>
-                                                <option value="Taraba">Taraba</option>
-                                                <option value="Yobe">Yobe</option>
-                                                <option value="Zamfara">Zamfara</option>
-                                            </select>
+                                            <label class="form-control-label">Passport photograph</label>
+                                            <input type="file" name="passportPhoto" id="passport" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="passport">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">LGA/Village/Town</label>
-                                            <input class="form-control" type="text" placeholder="LGA/Village/Town">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Permanent Home</label>
-                                            <input class="form-control" type="text" placeholder="Permanent home address">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Village Market</label>
-                                            <input class="form-control" type="text" placeholder="Village Market">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Nearest Catholic Church in Village</label>
-                                            <textarea class="form-control" placeholder="Nearest Catholic Church in Village" resize="none" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Nearest School/Landmark in Village</label>
-                                            <textarea class="form-control" placeholder="Nearest School/Landmark in Village" resize="none" rows="2"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Directions to Village</label>
-                                            <textarea class="form-control" placeholder="Directions to Village" rows="1"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Name of Church Attended</label>
-                                            <input class="form-control" type="text" placeholder="Name of Church Attended">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">State Of Residence</label>
-                                            <select class="custom-select">
-                                                <option disabled selected>Select State Of Residence</option>
-                                                <option value="Abia">Abia</option>
-                                                <option value="Adamawa">Adamawa</option>
-                                                <option value="Akwa Ibom">Akwa Ibom</option>
-                                                <option value="Anambra">Anambra</option>
-                                                <option value="Bauchi">Bauchi</option>
-                                                <option value="Bayelsa">Bayelsa</option>
-                                                <option value="Benue">Benue</option>
-                                                <option value="Borno">Borno</option>
-                                                <option value="Cross River">Cross River</option>
-                                                <option value="Delta">Delta</option>
-                                                <option value="Ebonyi">Ebonyi</option>
-                                                <option value="Edo">Edo</option>
-                                                <option value="Ekiti">Ekiti</option>
-                                                <option value="Enugu">Enugu</option>
-                                                <option value="Abuja">FCT - Abuja</option>
-                                                <option value="Gombe">Gombe</option>
-                                                <option value="Imo">Imo</option>
-                                                <option value="Jigawa">Jigawa</option>
-                                                <option value="Kaduna">Kaduna</option>
-                                                <option value="Kano">Kano</option>
-                                                <option value="Katsina">Katsina</option>
-                                                <option value="Kebbi">Kebbi</option>
-                                                <option value="Kogi">Kogi</option>
-                                                <option value="Kwara">Kwara</option>
-                                                <option value="Lagos">Lagos</option>
-                                                <option value="Nasarawa">Nasarawa</option>
-                                                <option value="Niger">Niger</option>
-                                                <option value="Ogun">Ogun</option>
-                                                <option value="Ondo">Ondo</option>
-                                                <option value="Osun">Osun</option>
-                                                <option value="Oyo">Oyo</option>
-                                                <option value="Plateau">Plateau</option>
-                                                <option value="Rivers">Rivers</option>
-                                                <option value="Sokoto">Sokoto</option>
-                                                <option value="Taraba">Taraba</option>
-                                                <option value="Yobe">Yobe</option>
-                                                <option value="Zamfara">Zamfara</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Full Address</label>
-                                            <input class="form-control" type="text" placeholder="Full Residential Address">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Directions to Residence</label>
-                                            <textarea class="form-control" placeholder="Directions to Residential Address" rows="1"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Spoken Languages</label>
-                                            <textarea class="form-control" placeholder="Languages Spoken" rows="1"></textarea>
+                                            <label class="form-control-label">Upload any other document </label>
+                                            <input type="file" name="otherDocument" id="anyOther" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="anyOther">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
                                         </div>
                                     </div>
 
                                 </div>
 
+                                <div class="row align-items-center">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Immediate Previous work address</label>
+                                            <textarea class="form-control" name="previous_work_address" placeholder="Employee Immediate Previous work address" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="pb-2 pt-2">
-                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark">Upload Employee Data</button>
+                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')">
+                                        <span class="button__text">Upload Employee Data</span>
+                                    </button>
                                 </div>
                             </form>
                         </div>
