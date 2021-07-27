@@ -13,7 +13,7 @@ require_once "../controllers/query.php";
             <div class=row>
                 <div class=col-md-12>
                     <div class="row mx-n2">
-                        <div class="col-sm-6 col-lg-4 px-2">
+                        <!--<div class="col-sm-6 col-lg-4 px-2">
                             <div class="card mb-3">
                                 <div class="card-header pb-3">
                                     <div class="d-flex justify-content-between align-items-center">
@@ -46,7 +46,7 @@ require_once "../controllers/query.php";
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                         <div class="col-sm-6 col-lg-4 px-2">
                             <div class="card mb-3">

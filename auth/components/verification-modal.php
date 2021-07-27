@@ -250,7 +250,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Guarantor First Name</label>
-                                            <input class="form-control" required type="text" name="employee_firstName" placeholder="First name">
+                                            <input class="form-control" required type="text" name="guarantor_firstName" placeholder="First name">
                                         </div>
                                     </div>
 
@@ -264,21 +264,21 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Guarantor Phone Number</label>
-                                            <input class="form-control" required type="text" name="guarantor_phoneNum" placeholder="0810 234 5678">
+                                            <input class="form-control" required type="text" name="tel" placeholder="0810 234 5678">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="form-control-label">Guarantor Residential Address</label>
-                                            <input class="form-control" required type="text" name="guarantor_residential_address" placeholder="House Address">
+                                            <input class="form-control" required type="text" name="residential_address" placeholder="House Address">
                                         </div>
                                     </div>
 
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="form-control-label">Guarantor Work Address</label>
-                                            <textarea class="form-control" placeholder="Office Address" name="guarantor_work_address" resize="none" rows="3"></textarea>
+                                            <textarea class="form-control" placeholder="Office Address" name="work_address" resize="none" rows="3"></textarea>
                                         </div>
                                     </div>
 
@@ -288,8 +288,8 @@
                                             <label class="form-control-label">Upload Means of Identification <span class="btn-inner--icon text-danger" data-toggle="tooltip" data-placement="right" title="NIN, Drivers License, Voters Card, International Passport">
                                                     <i data-feather="alert-circle"></i></span>
                                             </label>
-                                            <input type="file" name="meansOfID" id="ID" class="custom-input-file" data-multiple-caption="{count} files selected" />
-                                            <label for="ID">
+                                            <input type="file" name="meansOfID" id="GuarantorID" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="GuarantorID">
                                                 <i data-feather="upload"></i>
                                                 <span>Choose a file…</span>
                                             </label>
@@ -298,9 +298,9 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-control-label">Upload Employee CV (PDF Format)</label>
-                                            <input type="file" name="curriculumVitae" id="CV" class="custom-input-file" data-multiple-caption="{count} files selected" />
-                                            <label for="CV">
+                                            <label class="form-control-label">Upload any other document</label>
+                                            <input type="file" name="otherDocument" id="otherDoc" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="otherDoc">
                                                 <i data-feather="upload"></i>
                                                 <span>Choose a file…</span>
                                             </label>
@@ -309,7 +309,9 @@
 
                                 </div>
                                 <div class="pb-2 pt-2">
-                                    <button type=submit name="domestic_employee_btn" class="btn btn-block btn-dark">Upload Guarantor Data</button>
+                                    <button type=submit name="guarantor_btn" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')">
+                                        <span class="button__text">Upload Guarantor Data</span>
+                                    </button>
                                 </div>
                             </form>
                         </div>
