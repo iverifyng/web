@@ -53,7 +53,7 @@ if (isset($_POST['signup_btn'])) {
 
 
 
-//User xxxx script
+//User login script
 if (isset($_POST['user_login_btn'])) {
 
     $password = $conn->real_escape_string($_POST['password']);
@@ -110,7 +110,7 @@ if (isset($_POST['user_login_btn'])) {
         }
     }else {
         $_SESSION['message_title'] = "Incorrect Details";
-        $_SESSION['message'] = "Please xxxx with correct credentials!";
+        $_SESSION['message'] = "Please login with correct credentials!";
     }
 }
 
