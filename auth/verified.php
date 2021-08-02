@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['email'])) {
-    header('location: login');
+    header('location: xxxx');
 }
 if (isset($_GET['close'])) {
     session_destroy();
