@@ -4,6 +4,7 @@ include "./components/header.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/pay.php";
+require_once "../controllers/query.php";
 ?>
 
     <section class="bg-section-secondary pb-5">

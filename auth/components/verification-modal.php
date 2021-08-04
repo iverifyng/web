@@ -65,7 +65,9 @@
 
                                 </div>
                                 <div class="pb-2 pt-2">
-                                    <button type=submit name="pop_btn" class="btn btn-block btn-dark">Upload Proof of Payment</button>
+                                    <button type=submit name="pop_btn" class="btn btn-block btn-dark" onclick="this.classList.toggle('button--loading')">
+                                        <span class="button__text">Upload Proof of Payment</span>
+                                    </button>
                                 </div>
                             </form>
                         </div>
