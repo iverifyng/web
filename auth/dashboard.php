@@ -6,8 +6,6 @@ include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
 
-?>
-<?php
 $select_query = "SELECT * FROM pricelist";
 $result = mysqli_query($conn, $select_query);
 if (mysqli_num_rows($result) > 0) {

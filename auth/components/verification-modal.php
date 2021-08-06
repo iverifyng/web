@@ -136,7 +136,7 @@
                         <div class="">
                             <img src="../assets/img/svg/employee.svg" class="img-fluid img-center pb-2" style=width:100px;height:100px>
                             <span class="badge badge-soft-primary">
-                                Amount: ₦8,500.00
+                                Amount: ₦<?php echo number_format($corporateEmployee, 0, '.', ','); ?>
                             </span>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                     <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">Amount</label>
-                                            <input class="form-control" type="text" name="amount" value="8500" readonly>
+                                            <input class="form-control" type="text" name="amount" value="<?php echo $corporateEmployee; ?>" readonly>
                                         </div>
                                     </div>
 
@@ -227,7 +227,7 @@
                         <div class="">
                             <img src="../assets/img/svg/guarantor.svg" class="img-fluid img-center pb-2" style=width:100px;height:100px>
                             <span class="badge badge-soft-primary">
-                                Amount: ₦5,000.00
+                                Amount: ₦<?php echo number_format($guarantorVerification, 0, '.', ','); ?>
                             </span>
                         </div>
                     </div>
@@ -245,7 +245,7 @@
                                     <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">Amount</label>
-                                            <input class="form-control" type="text" name="amount" value="5000" readonly>
+                                            <input class="form-control" type="text" name="amount" value="<?php echo $guarantorVerification ?>" readonly>
                                         </div>
                                     </div>
 
@@ -340,7 +340,7 @@
                         <div class="">
                             <img src="../assets/img/svg/employee.svg" class="img-fluid img-center pb-2" style=width:100px;height:100px>
                             <span class="badge badge-soft-primary">
-                                Amount: ₦8,500.00
+                                Amount: ₦<?php echo number_format($domesticEmployee, 0, '.', ','); ?>
                             </span>
                         </div>
                     </div>
@@ -358,7 +358,7 @@
                                     <div class="col-md-6" style="display: none">
                                         <div class="form-group">
                                             <label class="form-control-label">Amount</label>
-                                            <input class="form-control" type="text" name="amount" value="8500" readonly>
+                                            <input class="form-control" type="text" name="amount" value="<?php echo $domesticEmployee; ?>" readonly>
                                         </div>
                                     </div>
 
