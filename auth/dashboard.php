@@ -5,6 +5,7 @@ include "./components/header.php";
 include "./components/navbar.php";
 include "./components/walletbalance.php";
 require_once "../controllers/query.php";
+require_once "../controllers/promo.php";
 
 $select_query = "SELECT * FROM pricelist";
 $result = mysqli_query($conn, $select_query);
@@ -342,5 +343,24 @@ if (mysqli_num_rows($result) > 0) {
             </div>
         </div>
     </section>
+
+    <div class="modal modal-fluid fade" id="staticBackdrop" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center py-3">
+                                <h6 class="h3">Hello <? echo $_SESSION['firstName']; ?><? echo $_SESSION['companyName']; ?><br><small>You stand a chance to win a free employee verification👏</small></h6>
+                                <p class="lead text-muted">
+                                     Click on the button below<br> to tell us why you should win a free employee verification.<br>
+                                     Follow us on LinkedIn & Instagram <b class="text-dark">@iverify.ng</b>.
+                                </p>
+                                <button data-toggle="modal" data-dismiss="modal" data-target="#promoModal" class="btn btn-dark">Tell us why</button><button class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <?php include "./components/footer.php"; ?>

@@ -67,14 +67,14 @@ require_once "../controllers/query.php";
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class=col-12>
-                                                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+                                                    <form action="" method="POST" id="topupForm">
                                                         <div class="form-row align-items-center">
                                                             <div class="col-7">
                                                                 <div class="form-group mb-0">
                                                                     <div class="input-group input-group-merge">
-                                                                        <input class="form-control" type="hidden" name="email" value="<?php echo $_SESSION['email']; ?>" readonly>
-                                                                        <input class="form-control" type="hidden" name="name" value="<?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?>" readonly>
-                                                                        <input type=number name="amount" class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount">
+                                                                        <input class="form-control" type="hidden" name="email" id="email" value="<?php echo $_SESSION['email']; ?>" readonly>
+                                                                        <input class="form-control" type="hidden" name="name" id="name" value="<?php echo $_SESSION['firstName']; ?> <?php echo $_SESSION['lastName']; ?>" readonly>
+                                                                        <input type=number name="amount" id="amount" class="form-control form-control-prepend border-0" placeholder=Amount aria-label="Topup Amount">
                                                                         <div class=input-group-prepend><span class="input-group-text border-0"><i>₦</i></span></div>
                                                                     </div>
                                                                 </div>
@@ -109,7 +109,7 @@ require_once "../controllers/query.php";
                                 </thead>
                                 <tbody>
                                 <?php
-                                $select_query = "SELECT * FROM wallet_topup INNER JOIN users ON wallet_topup.userID = users.id";
+                                $select_query = "SELECT * FROM wallet_topup WHERE userID='".$_SESSION['id']."'";
                                 $result = mysqli_query($conn, $select_query);
                                 if (mysqli_num_rows($result) > 0) {
                                     // output data of each row
@@ -138,7 +138,7 @@ require_once "../controllers/query.php";
                                         }
                                         echo "<tr>";
                                         echo "<td class=\"budget\">" .$transRef. "</td>";
-                                        echo "<td class=\"budget\">" ."₦".$amount. "</td>";
+                                        echo "<td class=\"budget\">" ."₦".number_format($amount, 2, '.', ','). "</td>";
                                         echo "<td class=\"budget\">" .$paymentType. "</td>";
                                         echo "<td class=\"budget\">" .date("d(D) M Y", strtotime($dateDeposited)). "</td>";
                                         echo "<td>" ."<span class=\"badge $class\">$paymentStatus</span> </span>". "</td>";

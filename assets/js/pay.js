@@ -12,17 +12,11 @@ function topupNow(e) {
         tx_ref: "REF_"+Math.floor((Math.random()*1000000000)+1),
         amount: document.getElementById("amount").value,
         currency: "NGN",
+        redirect_url: "verify-payment",
         payment_options: " ",
         customer: {
             email: document.getElementById("email").value,
             name: document.getElementById("name").value,
-        },
-        onclose: function() {
-            swal({
-                title: "Good job!",
-                text: "You clicked the button!",
-                icon: "success",
-            });
         },
     });
 }

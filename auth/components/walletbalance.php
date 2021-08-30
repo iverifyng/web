@@ -7,7 +7,7 @@
             <div class=col-auto>
                 <button type=button class="btn btn-sm btn-dark btn-icon">
                     <span class=btn-inner--icon>
-                        <?php
+                    <?php
                         $select_query = "SELECT * FROM users WHERE id ='".$_SESSION['id']."'";
                         $result = mysqli_query($conn, $select_query);
                         if (mysqli_num_rows($result) > 0) {
