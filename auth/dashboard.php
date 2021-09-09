@@ -121,7 +121,7 @@ if (mysqli_num_rows($result) > 0) {
                                             </div>
                                         </div>
                                         <div class=text-right>
-                                            <a href="certificate-verification" class="btn btn-xs btn-neutral btn-icon">
+                                            <a data-toggle="modal" data-target="#certificateSelect" type=button class="btn btn-xs btn-neutral btn-icon">
                                                 <span class=btn-inner--icon><i data-feather=plus></i></span>
                                                 <span class="btn-inner--text ml-1">Verify</span>
                                             </a>

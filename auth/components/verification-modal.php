@@ -78,7 +78,6 @@
     </div>
 </div>
 
-
 <!-- Employee Select -->
 <div class="modal modal-fluid fade" id="employeeSelect" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -120,6 +119,123 @@
     </div>
 </div>
 
+<!-- Certificate Select -->
+<div class="modal modal-fluid fade" id="certificateSelect" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 mb-3 text-center">
+                        <div class="">
+                            <img src="../assets/img/svg/certificate.png" class="img-fluid img-center pb-2" style="height: 100px; width: 100px">
+                            <h6 class="mb-0">Select verification range</h6>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-12 mb-3">
+                            <button data-toggle="modal" data-dismiss="modal" data-target="#singleCertificate" class="btn btn-dark btn-icon">
+                            <span class="btn-inner--icon">
+                                <i data-feather="check-square"></i>
+                            </span>
+                                <span class="btn-inner--text">Single Certificate Verification</span>
+                            </button>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <button data-toggle="modal" data-dismiss="modal" data-target="#domesticEmployee" class="btn btn-dark btn-icon">
+                            <span class="btn-inner--icon">
+                                <i data-feather="check-square"></i>
+                            </span>
+                                <span class="btn-inner--text">Multiple Certificate Verification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Single Certificate Verification -->
+<div class="modal modal-fluid fade" id="singleCertificate" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center py-4">
+                    <div class="col-lg-9 pb-4 text-center">
+                        <div class="">
+                            <img src="../assets/img/svg/certificate.png" class="img-fluid img-center pb-2" style=width:100px;height:100px>
+                            <span class="badge badge-soft-primary">
+                                Amount: ₦<?php echo number_format($certificateVerification, 0, '.', ','); ?>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col align-items-center">
+                        <div class=col-md-12>
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">User ID</label>
+                                            <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'] ?>" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6" style="display: none">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Amount</label>
+                                            <input class="form-control" type="text" name="amount" value="<?php echo $certificateVerification; ?>" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Employee First Name</label>
+                                            <input class="form-control" required type="text" name="employee_firstName" placeholder="First name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Employee Last Name</label>
+                                            <input class="form-control" required type="text" name="employee_lastName" placeholder="Last name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Upload Employee Certificate</label>
+                                            <input type="file" name="certificate" id="certificate" class="custom-input-file" data-multiple-caption="{count} files selected" />
+                                            <label for="certificate">
+                                                <i data-feather="upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pb-2 pt-2">
+                                    <button type=submit name="certificate_employee_btn" onclick="this.classList.toggle('button--loading')" class="btn btn-block btn-dark">
+                                        <span class="button__text">Upload Employee Data</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Corporate Employee Unlimited Details -->
 <div class="modal modal-fluid fade" id="coporateEmployee" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
@@ -210,7 +326,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Guarantor Details -->
 <div class="modal modal-fluid fade" id="guarantorVerification" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
@@ -323,7 +438,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Domestic Employee Unlimited Details -->
 <div class="modal modal-fluid fade" id="domesticEmployee" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
