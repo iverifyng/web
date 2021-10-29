@@ -67,7 +67,7 @@ require_once "../controllers/query.php";
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class=col-12>
-                                                    <form action="" method="POST" id="topupForm">
+                                                    <form action="" method="POST" id="topupForm" autocomplete="off">
                                                         <div class="form-row align-items-center">
                                                             <div class="col-7">
                                                                 <div class="form-group mb-0">
@@ -145,7 +145,7 @@ require_once "../controllers/query.php";
 
                                         echo "<td class='text-right'>"
                                             ."<div class=\"actions text-right ml-3\">
-                                                <a href=# class=\"action-item mr-2\" data-toggle=tooltip title='Payment Invoice'><i data-feather=file-text></i></a>
+                                                <a href=\"paid-invoice?id=$id\" class=\"action-item mr-2\" data-toggle=tooltip title='Payment Receipt'><i data-feather=file-text></i> Receipt</a>
                                               </div>".
                                             "</td >";
                                         "</tr>";

@@ -36,7 +36,7 @@ require_once "../controllers/query.php";
                                 <div class="icon icon-shape icon-md bg-success text-white"><i class="fas fa-receipt"></i></div>
                             </div>
                             <?php
-                            $countInvoices = mysqli_query($conn, "SELECT id FROM wallet_topup");
+                            $countInvoices = mysqli_query($conn, "SELECT id FROM wallet_topup WHERE userID='".$_SESSION['id']."'");
                             echo "<h5 class=\"h3 font-weight-bolder mb-1\">" .mysqli_num_rows($countInvoices). "</h5>";
                             ?>
                             <span class="d-block text-sm text-muted font-weight-bold">Payment Invoice(s)</span>

@@ -40,12 +40,26 @@ include "./components/navbar.php";
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-auto flex-fill mt-4 mt-sm-0 text-sm-right d-none d-lg-block">
                                             <button onclick="clipboardCopy()" class="btn btn-sm btn-neutral rounded-pill">Copy Key</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <?php
+                                if (isset($_SESSION['error_status'])) {
+                                    ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <div class="alert-message text-center lead">
+                                            <?php echo $_SESSION['error_status']; ?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                    unset($_SESSION['error_status']);
+                                }
+                            ?>
                             <div>
                                 <h5 class=mb-3>General information</h5>
                                 <form>

@@ -3367,7 +3367,6 @@ fieldset:disabled a.btn {
     padding: 1rem 1.875rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .5rem
 }
 
 .btn-group-sm>.btn,
@@ -4996,7 +4995,6 @@ input[type=submit].btn-block {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid #eaecf3;
-    border-radius: .75rem
 }
 
 .card>hr {
@@ -5355,7 +5353,6 @@ input[type=submit].btn-block {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .375rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 

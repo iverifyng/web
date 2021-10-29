@@ -104,6 +104,9 @@ if (isset($_POST['user_login_btn'])) {
             if ($verified == 0) {
                 $_SESSION['message_title'] = "Email not verified";
                 $_SESSION['message'] = "Check your email to verify account.";
+            }if ($phone == 'null') {
+                header('location: account');
+                $_SESSION['error_status'] = "Complete account information";
             }if ($verified == 1) {
                 header('location: dashboard');
             }
